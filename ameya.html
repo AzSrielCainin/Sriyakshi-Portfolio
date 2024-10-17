@@ -1,0 +1,481 @@
+<!DOCTYPE html>
+<html>
+<head>
+  	<meta charset="utf-8">
+  	<meta name="viewport" content="initial-scale=1, width=device-width">
+  	
+  	<link rel="stylesheet"  href="./index.css" />
+  	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Avenir:wght@400&display=swap" />
+  	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Brown Sugar:wght@400&display=swap" />
+	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
+	<script>
+window.onscroll = function() {scrollProgress()};
+
+function scrollProgress() {
+    var winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+    var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+    var scrolled = (winScroll / height) * 100;
+    document.getElementById("progressBar").style.width = scrolled + "%";
+}
+
+	</script>
+
+  	<style>
+
+.fade-in-text {
+      opacity: 0;
+      animation: fadeIn 2s ease-in-out forwards;
+    }
+
+    @keyframes fadeIn {
+      0% {
+        opacity: 0;
+      }
+      100% {
+        opacity: 1;
+      }
+	}
+
+
+#progressBar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 0%;
+    height: 10px;
+    background-color: #FB453A; 
+    z-index: 100; 
+}
+
+
+        .ameya-icon {
+  	position: absolute;
+  	top: 131.44px;
+  	left: 70.88px;
+  	width: 1363.5px;
+  	height: 771.7px;
+  	object-fit: cover;
+}
+.ameya-engineering-child {
+  	position: absolute;
+  	top: 958.96px;
+  	left: 69px;
+  	background-color: #ffffe5;
+  	width: 1363.5px;
+  	height: 851.2px;
+}
+.ameya-engineering-item {
+  	position: absolute;
+  	top: 1893.42px;
+  	left: 64.4px;
+  	background-color: #ffffe5;
+  	width: 1363.5px;
+  	height: 7135.3px;
+}
+.home {
+  	position: absolute;
+  	top: 46.9px;
+  	left: 1148.41px;
+  	font-size: 20.91px;
+  	color: #142d47;
+  	text-align: center;
+}
+
+.home a {
+  	color: #fff;   
+  	text-decoration: none;   
+}
+
+.about-me {
+  	position: absolute;
+  	top: 46.9px;
+  	left: 1241.79px;
+  	font-size: 20.91px;
+  	color: #142d47;
+  	text-align: center;
+}
+
+.about-me:hover {
+    text-decoration: underline;
+}
+
+.about-me a {
+  	color: #142D47;   
+  	text-decoration: none;   
+}
+
+.resume {
+  	position: absolute;
+  	top: 46.9px;
+  	left: 1373.5px;
+  	font-size: 20.91px;
+  	color: #142d47;
+  	text-align: center;
+}
+
+.resume:hover {
+    text-decoration: underline;
+}
+
+.resume a {
+  	color: #142D47;   
+  	text-decoration: none;   
+}
+
+.ameya-engineering-solutions {
+  	position: absolute;
+  	top: 325.22px;
+  	left: 206.89px;
+  	font-size: 111.5px;
+  	letter-spacing: -0.01em;
+  	line-height: 119%;
+  	font-family: 'Brown Sugar';
+  	text-align: center;
+  	display: flex;
+  	align-items: center;
+  	justify-content: center;
+  	width: 1091.5px;
+  	height: 228.6px;
+}
+.product-description {
+  	position: absolute;
+  	top: 978.25px;
+  	left: 119.49px;
+  	letter-spacing: -0.01em;
+  	font-family: 'Brown Sugar';
+  	display: flex;
+  	align-items: center;
+  	width: 615.8px;
+  	height: 127.2px;
+}
+.landing-page {
+  	position: absolute;
+  	top: 1893.42px;
+  	left: 124.41px;
+  	letter-spacing: -0.01em;
+  	font-family: 'Brown Sugar';
+  	display: flex;
+  	align-items: center;
+  	width: 615.8px;
+  	height: 127.2px;
+}
+.website-designed-for {
+  	position: absolute;
+  	top: 573.5px;
+  	left: 421.25px;
+  	font-size: 31.36px;
+  	letter-spacing: -0.01em;
+  	text-align: center;
+  	display: flex;
+  	align-items: center;
+  	justify-content: center;
+  	width: 662.8px;
+  	height: 135.9px;
+}
+.ameya-engineering-inner {
+  	position: absolute;
+  	top: 1036.61px;
+  	left: 708.08px;
+  	border-top: 10.5px solid #ffe100;
+  	box-sizing: border-box;
+  	width: 89.2px;
+  	height: 10.5px;
+}
+.i-had-the {
+  	margin: 0;
+}
+.i-had-the-container {
+  	position: absolute;
+  	top: 1125.14px;
+  	left: 171.24px;
+  	font-size: 24.39px;
+  	letter-spacing: -0.01em;
+  	line-height: 42.69px;
+  	color: #000;
+  	display: inline-block;
+  	width: 1149.9px;
+  	height: 597.6px;
+}
+.image-55-icon {
+  	position: absolute;
+  	top: 2010.45px;
+  	left: 124.41px;
+  	width: 1243.5px;
+  	height: 6939.3px;
+  	object-fit: cover;
+}
+.rectangle-div {
+  	position: absolute;
+  	top: 9090.2px;
+  	left: 64.4px;
+  	background-color: #ffffe5;
+  	width: 1363.5px;
+  	height: 1700.4px;
+}
+.ameya-engineering-child1 {
+  	position: absolute;
+  	top: 10863.09px;
+  	left: 64.4px;
+  	background-color: #ffffe5;
+  	width: 1363.5px;
+  	height: 2281.3px;
+}
+.catalogue-page {
+  	position: absolute;
+  	top: 9090.2px;
+  	left: 124.41px;
+  	letter-spacing: -0.01em;
+  	font-family: 'Brown Sugar';
+  	white-space: pre-wrap;
+  	display: flex;
+  	align-items: center;
+  	width: 711.6px;
+  	height: 127.2px;
+}
+.product-page {
+  	position: absolute;
+  	top: 10863.09px;
+  	left: 124.41px;
+  	letter-spacing: -0.01em;
+  	font-family: 'Brown Sugar';
+  	white-space: pre-wrap;
+  	display: flex;
+  	align-items: center;
+  	width: 711.6px;
+  	height: 127.2px;
+}
+.ameya-engineering-child2 {
+  	position: absolute;
+  	top: 13208.9px;
+  	left: 70.88px;
+  	background-color: #ffffe5;
+  	width: 1363.5px;
+  	height: 2006.2px;
+}
+.about-us-page {
+  	position: absolute;
+  	top: 13208.9px;
+  	left: 124.41px;
+  	letter-spacing: -0.01em;
+  	font-family: 'Brown Sugar';
+  	white-space: pre-wrap;
+  	display: flex;
+  	align-items: center;
+  	width: 711.6px;
+  	height: 127.2px;
+}
+.ameya-engineering-child3 {
+  	position: absolute;
+  	top: 15271.34px;
+  	left: 64.4px;
+  	background-color: #ffffe5;
+  	width: 1363.5px;
+  	height: 1374.8px;
+}
+.cart-page {
+  	position: absolute;
+  	top: 15271.34px;
+  	left: 124.41px;
+  	letter-spacing: -0.01em;
+  	font-family: 'Brown Sugar';
+  	white-space: pre-wrap;
+  	display: flex;
+  	align-items: center;
+  	width: 711.6px;
+  	height: 127.2px;
+}
+.image-56-icon {
+  	position: absolute;
+  	top: 9207.44px;
+  	left: 124.41px;
+  	width: 1243.5px;
+  	height: 1508.3px;
+  	object-fit: cover;
+}
+.image-57-icon {
+  	position: absolute;
+  	top: 10968.59px;
+  	left: 124.41px;
+  	width: 1243.5px;
+  	height: 2109.1px;
+  	object-fit: cover;
+}
+.image-58-icon {
+  	position: absolute;
+  	top: 13315.01px;
+  	left: 124.41px;
+  	width: 1243.5px;
+  	height: 1819.7px;
+  	object-fit: cover;
+}
+.image-59-icon {
+  	position: absolute;
+  	top: 15374.25px;
+  	left: 124.41px;
+  	width: 1243.5px;
+  	height: 1192.5px;
+  	object-fit: cover;
+}
+
+.social-link {
+  text-decoration: none;
+  color: #000;
+  font-size: 18.04px;
+  letter-spacing: -0.01em;
+  position: absolute;
+  display: inline-block;
+}
+
+.linkedin {
+	top: 16807.03px;
+    left: 880.39px;
+  color:#142d47
+
+}
+
+.instagram {
+	top: 16807.03px;
+    left: 544.95px;
+  color:#142d47
+}
+
+.email {
+	top: 16807.03px;
+    left: 666.67px;
+  color:#142d47
+
+}
+
+.social-logo {
+  width: 48px; 
+  height: 48px; 
+  opacity: 0;
+  transition: opacity 0.3s ease;  
+  position: absolute; 
+  top: 50%; 
+  left: 50%; 
+  transform: translate(-50%, -50%); 
+}
+
+.social-text {
+  transition: opacity 0.3s ease;
+  position: relative; 
+  z-index: 1; 
+}
+
+.social-link:hover .social-text {
+  opacity: 0; 
+}
+
+.social-link:hover .social-logo {
+  opacity: 1; 
+}
+
+.get-in-contact {
+  	position: absolute;
+  	top: 16717.46px;
+  	left: 635.05px;
+  	font-size: 32.06px;
+  	letter-spacing: -0.01em;
+  	font-family: 'Brown Sugar';
+  	color: #142d47;
+}
+.s-logo-blue-01 {
+  	position: absolute;
+  	top: 25.22px;
+  	left: 20.52px;
+  	width: 50.4px;
+  	height: 72.1px;
+  	object-fit: cover;
+}
+.ameya-engineering {
+  	width: 100%;
+  	position: relative;
+  	background-color: #ffe100;
+  	height: 16919.1px;
+  	overflow: hidden;
+  	text-align: left;
+  	font-size: 55.75px;
+  	color: #ffe100;
+  	font-family: Avenir;
+}
+
+
+    </style>
+  	
+</head>
+<body>
+  	
+<div id="progressBar"></div>
+
+  	<div class="ameya-engineering">
+    		<img class="ameya-icon w3-opacity w3-hover-opacity-off" alt="" src="ameyacover.png">
+    		
+    		<div class="ameya-engineering-child">
+    		</div>
+    		<div class="ameya-engineering-item">
+    		</div>
+    		<div class="home"><a href="index.html"> Home</a></div>
+			<div class="about-me"><a href="about-me.html"> About Me</a></div>
+			<div class="resume"><a href="resume.html" >Resume</a></div>
+    		<div class="ameya-engineering-solutions fade-in-text">ameya engineering solutions</div>
+    		<div class="product-description">Product Description</div>
+    		<div class="landing-page">Landing page</div>
+    		<div class="website-designed-for fade-in-text">Website designed for a biotechnology startup</div>
+    		<div class="ameya-engineering-inner">
+    		</div>
+    		<div class="i-had-the-container">
+      			<p class="i-had-the">I had the chance to design a website blueprint for "Ameya Engineering Solutions," a biotechnology startup focused on innovative products in the biotech space. The challenge was to create a site that effectively showcased their single product while maintaining a professional and polished feel. The company’s branding was central to the design, with a blue and orange color palette drawn from their logo.</p>
+      			<p class="i-had-the">&nbsp;</p>
+      			<p class="i-had-the">The design approach was to keep things simple yet impactful. With only one product to highlight, I aimed for a clean layout that emphasized clarity and ease of navigation. The blue tones conveyed trust and reliability, while the orange added a pop of energy and innovation, balancing the professional and creative aspects of the brand.</p>
+      			<p class="i-had-the">&nbsp;</p>
+      			<p class="i-had-the">By focusing on a streamlined user experience, the site allows potential customers to easily learn about the product’s benefits and technological advancements. The result was a design that not only reflected the brand’s forward-thinking approach to biotechnology but also created an engaging platform for showcasing their work.</p>
+    		</div>
+    		<img class="image-55-icon" alt="" src="ameya1.png">
+    		
+    		<div class="rectangle-div">
+    		</div>
+    		<div class="ameya-engineering-child1">
+    		</div>
+    		<div class="catalogue-page">catalogue  page</div>
+    		<div class="product-page">product  page</div>
+    		<div class="ameya-engineering-child2">
+    		</div>
+    		<div class="about-us-page">about us  page</div>
+    		<div class="ameya-engineering-child3">
+    		</div>
+    		<div class="cart-page">cart  page</div>
+    		<img class="image-56-icon" alt="" src="ameya2.png">
+    		
+    		<img class="image-57-icon" alt="" src="ameya3.png">
+    		
+    		<img class="image-58-icon" alt="" src="ameya4.png">
+    		
+    		<img class="image-59-icon" alt="" src="ameya5.png">
+    		
+		<a href="https://www.linkedin.com/in/sriyakshi-sinha-43b45b28b/" target="_blank" class="social-link linkedin">
+			<span class="social-text">LinkedIn</span>
+			<img src="linkedin-black.svg" alt="LinkedIn Logo" class="social-logo">
+		  </a>
+		
+		  <a href="https://www.instagram.com/sriyakshii/?hl=en" target="_blank" class="social-link instagram">
+			<span class="social-text">Instagram</span>
+			<img src="instagram-black.svg" alt="Instagram Logo" class="social-logo">
+		  </a>
+		
+		  <a href="mailto:sriyakshisgmailcom" class="social-link email">
+			<span class="social-text">sriyakshisgmailcom</span>
+			<img src="email-black.svg" alt="Email Icon" class="social-logo">
+		  </a>
+
+		    <div class="get-in-contact">Get In Contact</div>
+    		<img class="s-logo-blue-01" alt="" src="s logo blue-01.png">
+    		
+  	</div>
+  	
+  	
+  	
+  	
+</body>
+</html>

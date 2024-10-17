@@ -1,0 +1,882 @@
+<!DOCTYPE html>
+<html>
+<head>
+  	<meta charset="utf-8">
+  	<meta name="viewport" content="initial-scale=1, width=device-width">
+  	
+  	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Avenir:wght@400&display=swap" />
+  	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Brown Sugar:wght@400&display=swap" />
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  	
+	
+	<style>
+
+
+.floating-icon {
+      width: 100px;
+      height: 100px;
+      animation: float 2s infinite ease-in-out;
+    }
+
+    @keyframes float {
+      0%, 100% {
+        transform: translateY(0);
+      }
+      50% {
+        transform: translateY(-20px);
+      }
+    }
+
+ html {
+    scroll-behavior: smooth;
+    overflow-x:hidden;
+}
+
+
+        .resume-child {
+  	position: absolute;
+  	top: -653.08px;
+  	left: -638.83px;
+  	border-radius: 50%;
+  	background-color: #142d47;
+  	width: 1277.7px;
+  	height: 1306.2px;
+}
+.resume-item {
+  	position: absolute;
+  	top: 398.23px;
+  	left: 996.18px;
+  	background-color: #142d47;
+  	width: 507.2px;
+  	height: 468.7px;
+}
+
+@keyframes w3-animate-left {
+    from {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes w3-animate-right {
+    from {
+        transform: translateX(100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+.resume-child {
+    animation: w3-animate-left 1s forwards; 
+}
+ 
+.resume-item {
+    animation: w3-animate-right 1s forwards; 
+}
+
+.find-out-more {
+  	position: absolute;
+  	top: 467.67px;
+  	left: 473.89px;
+  	font-size: 34.85px;
+  	letter-spacing: -0.01em;
+  	color: #ffe100;
+  	display: flex;
+  	align-items: center;
+  	justify-content: center;
+  	width: 557.5px;
+  	height: 135.9px;
+}
+.my-resume {
+  	position: absolute;
+  	top: 340.49px;
+  	left: 206.89px;
+  	font-size: 111.5px;
+  	letter-spacing: -0.01em;
+  	font-family: 'Brown Sugar';
+  	color: #ffe100;
+  	display: flex;
+  	align-items: center;
+  	justify-content: center;
+  	width: 1091.5px;
+  	height: 127.2px;
+}
+.home {
+  	position: absolute;
+  	top: 46.91px;
+  	left: 1148.41px;
+  	font-size: 20.91px;
+}
+
+.home:hover {
+    text-decoration: underline;
+}
+
+.home a {
+  	color: #fff; 
+  	text-decoration: none; 
+}
+
+.about-me {
+  	position: absolute;
+  	top: 46.91px;
+  	left: 1241.79px;
+  	font-size: 20.91px;
+}
+
+.about-me:hover {
+    text-decoration: underline;
+}
+
+.about-me a {
+  	color: #fff;   
+  	text-decoration: none;   
+}
+
+.resume1 {
+  	position: absolute;
+  	top: 46.91px;
+  	left: 1373.5px;
+  	font-size: 20.91px;
+  	color: #ffe100;
+}
+.s-logo-01-3 {
+  	position: absolute;
+  	top: 25.92px;
+  	left: 22.15px;
+  	width: 48.8px;
+  	height: 70.7px;
+  	object-fit: cover;
+}
+.hello {
+  	position: absolute;
+  	top: 1070.24px;
+  	left: 448.17px;
+  	font-size: 49.78px;
+  	letter-spacing: 0.05em;
+  	line-height: 120%;
+  	font-family: 'Brown Sugar';
+  	display: flex;
+  	align-items: center;
+  	justify-content: center;
+  	width: 181.2px;
+  	height: 87.9px;
+}
+.personal-skills {
+  	position: absolute;
+  	top: 1410.12px;
+  	left: 241.54px;
+  	font-size: 41.81px;
+  	letter-spacing: 0.05em;
+  	line-height: 120%;
+  	font-family: 'Brown Sugar';
+  	display: flex;
+  	align-items: center;
+  	justify-content: center;
+  	width: 393px;
+  	height: 64.6px;
+}
+.experience {
+  	position: absolute;
+  	top: 1739.1px;
+  	left: 66.08px;
+  	font-size: 41.81px;
+  	letter-spacing: 0.05em;
+  	line-height: 120%;
+  	font-family: 'Brown Sugar';
+  	text-align: left;
+  	display: flex;
+  	align-items: center;
+  	width: 306.2px;
+  	height: 64.6px;
+}
+.education {
+  	position: absolute;
+  	top: 1960.45px;
+  	left: 868.93px;
+  	font-size: 41.81px;
+  	letter-spacing: 0.05em;
+  	line-height: 120%;
+  	font-family: 'Brown Sugar';
+  	text-align: left;
+  	display: flex;
+  	align-items: center;
+  	width: 257.3px;
+  	height: 64.6px;
+}
+.honors-and-awards {
+  	position: absolute;
+  	top: 2466.41px;
+  	left: 865.82px;
+  	font-size: 41.81px;
+  	letter-spacing: 0.05em;
+  	line-height: 120%;
+  	font-family: 'Brown Sugar';
+  	text-align: left;
+  	display: flex;
+  	align-items: center;
+  	width: 501.7px;
+  	height: 64.6px;
+}
+.tools {
+  	position: absolute;
+  	top: 1410.12px;
+  	left: 1083.65px;
+  	font-size: 41.81px;
+  	letter-spacing: 0.05em;
+  	line-height: 120%;
+  	font-family: 'Brown Sugar';
+  	display: flex;
+  	align-items: center;
+  	justify-content: center;
+  	width: 188.1px;
+  	height: 64.6px;
+}
+.im-sriyakshi-a {
+  	margin: 0;
+}
+.im-sriyakshi-a-container1 {
+  	width: 100%;
+}
+.im-sriyakshi-a-container {
+  	position: absolute;
+  	top: 1176.01px;
+  	left: 448.17px;
+  	font-size: 31.11px;
+  	letter-spacing: -0.01em;
+  	line-height: 120%;
+  	text-align: left;
+  	display: flex;
+  	align-items: center;
+  	width: 955.8px;
+  	height: 172.7px;
+}
+.distinction-scholarship-for-container {
+  	position: absolute;
+  	top: 2547.29px;
+  	left: 866.59px;
+  	font-size: 31.11px;
+  	letter-spacing: -0.01em;
+  	line-height: 120%;
+  	text-align: left;
+  	display: flex;
+  	align-items: center;
+  	width: 574px;
+  	height: 173.8px;
+}
+.resume-inner {
+  	position: absolute;
+  	top: 1613.88px;
+  	left: 582.72px;
+  	border-radius: 66.11px;
+  	border: 0.8px solid #fff;
+  	box-sizing: border-box;
+  	width: 238.8px;
+  	height: 66.9px;
+}
+.logo-designer {
+  	margin: 0;
+  	font-size: 37.3px;
+}
+.logo-designer-nupur-container {
+  	position: absolute;
+  	top: 2202.28px;
+  	left: 63.96px;
+  	letter-spacing: -0.01em;
+  	line-height: 120%;
+  	text-align: left;
+  	display: flex;
+  	align-items: center;
+  	width: 598.9px;
+  	height: 207.7px;
+  	font-size: 31.1px;
+}
+.uiux-design-intern-container {
+  	position: absolute;
+  	top: 1812.61px;
+  	left: 66.08px;
+  	letter-spacing: -0.01em;
+  	line-height: 120%;
+  	text-align: left;
+  	display: flex;
+  	align-items: center;
+  	width: 677.3px;
+  	height: 360.1px;
+  	font-size: 31.1px;
+}
+.design-thinking {
+  	position: absolute;
+  	top: 1630.22px;
+  	left: 592.05px;
+  	letter-spacing: -0.01em;
+  	line-height: 120%;
+  	display: flex;
+  	align-items: center;
+  	justify-content: center;
+  	width: 219.3px;
+  	height: 35.8px;
+}
+.delhi-public-school-container {
+  	position: absolute;
+  	top: 2058.45px;
+  	left: 866.59px;
+  	font-size: 31.11px;
+  	letter-spacing: -0.01em;
+  	line-height: 120%;
+  	text-align: left;
+  	display: flex;
+  	align-items: center;
+  	width: 404.4px;
+}
+.senior-graphic-designer-container {
+  	position: absolute;
+  	top: 2470.61px;
+  	left: 63.96px;
+  	letter-spacing: -0.01em;
+  	line-height: 120%;
+  	text-align: left;
+  	display: flex;
+  	align-items: center;
+  	width: 605.7px;
+  	font-size: 31.1px;
+}
+.rectangle-div {
+  	position: absolute;
+  	top: 1517.45px;
+  	left: 63.96px;
+  	border-radius: 66.11px;
+  	border: 0.8px solid #fff;
+  	box-sizing: border-box;
+  	width: 238.8px;
+  	height: 66.9px;
+}
+.problem-solving {
+  	position: absolute;
+  	top: 1533px;
+  	left: 74.07px;
+  	letter-spacing: -0.01em;
+  	line-height: 120%;
+  	display: flex;
+  	align-items: center;
+  	justify-content: center;
+  	width: 219.3px;
+  	height: 35.8px;
+}
+.resume-child1 {
+  	position: absolute;
+  	top: 1517.45px;
+  	left: 318.28px;
+  	border-radius: 66.11px;
+  	border: 0.8px solid #fff;
+  	box-sizing: border-box;
+  	width: 239.5px;
+  	height: 66.9px;
+}
+.user-experience {
+  	position: absolute;
+  	top: 1533px;
+  	left: 328.39px;
+  	letter-spacing: -0.01em;
+  	line-height: 120%;
+  	display: flex;
+  	align-items: center;
+  	justify-content: center;
+  	width: 219.3px;
+  	height: 35.8px;
+}
+.resume-child2 {
+  	position: absolute;
+  	top: 1517.45px;
+  	left: 582.72px;
+  	border-radius: 66.11px;
+  	border: 0.8px solid #fff;
+  	box-sizing: border-box;
+  	width: 238.8px;
+  	height: 65.3px;
+}
+.user-design {
+  	position: absolute;
+  	top: 1533px;
+  	left: 592.05px;
+  	letter-spacing: -0.01em;
+  	line-height: 120%;
+  	display: flex;
+  	align-items: center;
+  	justify-content: center;
+  	width: 219.3px;
+  	height: 35px;
+}
+.resume-child3 {
+  	position: absolute;
+  	top: 1614.66px;
+  	left: 938.93px;
+  	border-radius: 66.11px;
+  	border: 0.8px solid #fff;
+  	box-sizing: border-box;
+  	width: 238.8px;
+  	height: 65.3px;
+}
+.adobe-illustrator {
+  	position: absolute;
+  	top: 1630.22px;
+  	left: 948.26px;
+  	letter-spacing: -0.01em;
+  	line-height: 120%;
+  	display: flex;
+  	align-items: center;
+  	justify-content: center;
+  	width: 219.3px;
+  	height: 35px;
+}
+.resume-child4 {
+  	position: absolute;
+  	top: 1517.45px;
+  	left: 938.93px;
+  	border-radius: 66.11px;
+  	border: 0.8px solid #fff;
+  	box-sizing: border-box;
+  	width: 238.8px;
+  	height: 65.3px;
+}
+.figma {
+  	position: absolute;
+  	top: 1533px;
+  	left: 948.26px;
+  	letter-spacing: -0.01em;
+  	line-height: 120%;
+  	display: flex;
+  	align-items: center;
+  	justify-content: center;
+  	width: 219.3px;
+  	height: 35px;
+}
+.resume-child5 {
+  	position: absolute;
+  	top: 1614.66px;
+  	left: 1201.8px;
+  	border-radius: 66.11px;
+  	border: 0.8px solid #fff;
+  	box-sizing: border-box;
+  	width: 238.8px;
+  	height: 65.3px;
+}
+.adobe-after-effects {
+  	position: absolute;
+  	top: 1630.22px;
+  	left: 1211.14px;
+  	letter-spacing: -0.01em;
+  	line-height: 120%;
+  	display: flex;
+  	align-items: center;
+  	justify-content: center;
+  	width: 219.3px;
+  	height: 35px;
+}
+.resume-child6 {
+  	position: absolute;
+  	top: 1517.45px;
+  	left: 1202.58px;
+  	border-radius: 66.11px;
+  	border: 0.8px solid #fff;
+  	box-sizing: border-box;
+  	width: 238.8px;
+  	height: 65.3px;
+}
+.adobe-photoshop {
+  	position: absolute;
+  	top: 1533px;
+  	left: 1211.91px;
+  	letter-spacing: -0.01em;
+  	line-height: 120%;
+  	display: flex;
+  	align-items: center;
+  	justify-content: center;
+  	width: 219.3px;
+  	height: 35px;
+}
+.resume-child7 {
+  	position: absolute;
+  	top: 1809.1px;
+  	left: 938.93px;
+  	border-radius: 66.11px;
+  	border: 0.8px solid #fff;
+  	box-sizing: border-box;
+  	width: 238.8px;
+  	height: 65.3px;
+}
+.microsoft-office {
+  	position: absolute;
+  	top: 1824.65px;
+  	left: 948.26px;
+  	letter-spacing: -0.01em;
+  	line-height: 120%;
+  	display: flex;
+  	align-items: center;
+  	justify-content: center;
+  	width: 219.3px;
+  	height: 35px;
+}
+.resume-child8 {
+  	position: absolute;
+  	top: 1711.88px;
+  	left: 938.93px;
+  	border-radius: 66.11px;
+  	border: 0.8px solid #fff;
+  	box-sizing: border-box;
+  	width: 238.8px;
+  	height: 65.3px;
+}
+.miro {
+  	position: absolute;
+  	top: 1727.44px;
+  	left: 948.26px;
+  	letter-spacing: -0.01em;
+  	line-height: 120%;
+  	display: flex;
+  	align-items: center;
+  	justify-content: center;
+  	width: 219.3px;
+  	height: 35px;
+}
+.resume-child9 {
+  	position: absolute;
+  	top: 1809.1px;
+  	left: 1201.8px;
+  	border-radius: 66.11px;
+  	border: 0.8px solid #fff;
+  	box-sizing: border-box;
+  	width: 238.8px;
+  	height: 65.3px;
+}
+.visual-studio-code {
+  	position: absolute;
+  	top: 1824.65px;
+  	left: 1211.14px;
+  	letter-spacing: -0.01em;
+  	line-height: 120%;
+  	display: flex;
+  	align-items: center;
+  	justify-content: center;
+  	width: 219.3px;
+  	height: 35px;
+}
+.resume-child10 {
+  	position: absolute;
+  	top: 1711.88px;
+  	left: 1202.58px;
+  	border-radius: 66.11px;
+  	border: 0.8px solid #fff;
+  	box-sizing: border-box;
+  	width: 238.8px;
+  	height: 65.3px;
+}
+.whimsical {
+  	position: absolute;
+  	top: 1727.44px;
+  	left: 1211.91px;
+  	letter-spacing: -0.01em;
+  	line-height: 120%;
+  	display: flex;
+  	align-items: center;
+  	justify-content: center;
+  	width: 219.3px;
+  	height: 35px;
+}
+.resume-child11 {
+  	position: absolute;
+  	top: 1613.88px;
+  	left: 318.28px;
+  	border-radius: 66.11px;
+  	border: 0.8px solid #fff;
+  	box-sizing: border-box;
+  	width: 239.5px;
+  	height: 66.9px;
+}
+.user-research {
+  	position: absolute;
+  	top: 1630.22px;
+  	left: 328.39px;
+  	letter-spacing: -0.01em;
+  	line-height: 120%;
+  	display: flex;
+  	align-items: center;
+  	justify-content: center;
+  	width: 219.3px;
+  	height: 35.8px;
+}
+.resume-child12 {
+  	position: absolute;
+  	top: 1613.88px;
+  	left: 63.96px;
+  	border-radius: 66.11px;
+  	border: 0.8px solid #fff;
+  	box-sizing: border-box;
+  	width: 238.8px;
+  	height: 66.1px;
+}
+.strong-communication {
+  	position: absolute;
+  	top: 1629.44px;
+  	left: 74.07px;
+  	letter-spacing: -0.01em;
+  	line-height: 120%;
+  	display: flex;
+  	align-items: center;
+  	justify-content: center;
+  	width: 219.3px;
+  	height: 35px;
+}
+.vuesaxoutlinearrow-down-icon {
+  	position: absolute;
+  	top: 898.13px;
+  	left: 1431.24px;
+  	width: 55.8px;
+  	height: 56.6px;
+}
+
+.social-link {
+  text-decoration: none;
+  color: #000;
+  font-size: 18.04px;
+  letter-spacing: -0.01em;
+  position: absolute;
+  display: inline-block;
+}
+
+.linkedin {
+	top: 2958.1px;
+    left: 877.51px;
+  color:#ffe100
+
+}
+
+.instagram {
+	top: 2958.1px;
+    left: 542.07px;
+  color:#ffe100
+}
+
+.email {
+	top: 2958.1px;
+    left: 663.78px;
+  color:#ffe100
+
+}
+
+.social-logo {
+  width: 48px; 
+  height: 48px; 
+  opacity: 0; 
+  transition: opacity 0.3s ease; 
+  position: absolute; 
+  top: 50%; 
+  left: 50%; 
+  transform: translate(-50%, -50%); 
+}
+
+.social-text {
+  transition: opacity 0.3s ease;
+  position: relative; 
+  z-index: 1; 
+}
+
+.social-link:hover .social-text {
+  opacity: 0;
+}
+
+.social-link:hover .social-logo {
+  opacity: 1; 
+}
+
+.get-in-contact {
+  	position: absolute;
+  	top: 2863.97px;
+  	left: 625.79px;
+  	font-size: 32.06px;
+  	letter-spacing: -0.01em;
+  	font-family: 'Brown Sugar';
+  	color: #ffe100;
+  	text-align: left;
+}
+.image-49-icon {
+  	position: absolute;
+  	height: 10.04%;
+  	width: 20.31%;
+  	top: 33.96%;
+  	right: 75.27%;
+  	bottom: 56.01%;
+  	left: 4.42%;
+  	border-radius: 150.1px;
+  	max-width: 100%;
+  	overflow: hidden;
+  	max-height: 100%;
+  	object-fit: cover;
+}
+.resume {
+  	width: 100%;
+  	position: relative;
+  	background-color: #fb453a;
+  	height: 3065.5px;
+  	overflow: hidden;
+  	text-align: center;
+  	font-size: 24.89px;
+  	color: #fff;
+  	font-family: Avenir;
+}
+
+
+    </style>
+
+</head>
+<body>
+  	
+	<div class="resume">
+		<div class="resume-child">
+		</div>
+		<div class="resume-item">
+		</div>
+		<div class="find-out-more">Find out more about me</div>
+		<div class="my-resume">My Resume</div>
+		<div class="home"><a href="index.html"> Home</a></div>
+		<div class="about-me"><a href="about-me.html"> About Me</a></div>
+		<div class="resume1">Resume</div>
+		<img class="s-logo-01-3" alt="logo" src="s logo-01 3.png">
+		
+		<div class="hello" id ="scrollhere">Hello!</div>
+		<div class="personal-skills">Personal skills</div>
+		<div class="experience">Experience</div>
+		<div class="education">education</div>
+		<div class="honors-and-awards">honors and awards</div>
+		<div class="tools">Tools</div>
+		<div class="im-sriyakshi-a-container">
+			  <span class="im-sriyakshi-a-container1">
+					<p class="im-sriyakshi-a">I'm Sriyakshi, a passionate and aspiring UI/UX designer with a curiosity that knows no bounds. Design is not just a career path for me, it's a journey of exploration and continuous learning.</p>
+			  </span>
+		</div>
+		<div class="distinction-scholarship-for-container">
+			  <span class="im-sriyakshi-a-container1">
+					<p class="im-sriyakshi-a">Distinction Scholarship for Semester I</p>
+					<p class="im-sriyakshi-a">Distinction Scholarship for Semester Ii</p>
+					<p class="im-sriyakshi-a">CNR Rao scholarship for Semester III</p>
+					<p class="im-sriyakshi-a">Distinction Scholarship for Semester IV</p>
+			  </span>
+		</div>
+		<div class="resume-inner">
+		</div>
+		<div class="logo-designer-nupur-container">
+			  <span class="im-sriyakshi-a-container1">
+					<p class="logo-designer">Logo Designer</p>
+					<p class="logo-designer">&nbsp;</p>
+					<p class="im-sriyakshi-a">Nupur Dhwani Dance Studio</p>
+					<p class="im-sriyakshi-a">Tangerine Bakehouse</p>
+					<p class="im-sriyakshi-a">2021-2022</p>
+					<p class="im-sriyakshi-a">Designed logos </p>
+			  </span>
+		</div>
+		<div class="uiux-design-intern-container">
+			  <span class="im-sriyakshi-a-container1">
+					<p class="logo-designer">UIUX Design Intern</p>
+					<p class="logo-designer">&nbsp;</p>
+					<p class="im-sriyakshi-a">Antriksh Labs</p>
+					<p class="im-sriyakshi-a">June 2024- July 2024</p>
+					<p class="im-sriyakshi-a">Designed website for 4FourSquares- An E-Commerce Clothing Website </p>
+					<p class="im-sriyakshi-a">Designed website for Ameya Engineering Solutions- A biotechnology Solution Startup</p>
+			  </span>
+		</div>
+		<div class="design-thinking">Design Thinking</div>
+		<div class="delhi-public-school-container">
+			  <span class="im-sriyakshi-a-container1">
+					<p class="im-sriyakshi-a">Delhi public school</p>
+					<p class="im-sriyakshi-a">10th Board CGPA- 89%</p>
+					<p class="im-sriyakshi-a">2006- 2022</p>
+					<p class="im-sriyakshi-a">&nbsp;</p>
+					<p class="im-sriyakshi-a">&nbsp;</p>
+					<p class="im-sriyakshi-a">PES University</p>
+					<p class="im-sriyakshi-a">cGPA-89.5%</p>
+					<p class="im-sriyakshi-a">2022- 2026</p>
+			  </span>
+		</div>
+		<div class="senior-graphic-designer-container">
+			  <span class="im-sriyakshi-a-container1">
+					<p class="logo-designer">Senior Graphic Designer</p>
+					<p class="logo-designer">&nbsp;</p>
+					<p class="im-sriyakshi-a">DELHI PUBLIC SCHOOL- IT CLUB</p>
+					<p class="im-sriyakshi-a">2021-2022</p>
+					<p class="im-sriyakshi-a">Designed logos for TECHSPRINT</p>
+					<p class="im-sriyakshi-a">Designed Flyers and Certificate</p>
+			  </span>
+		</div>
+		<div class="rectangle-div">
+		</div>
+		<div class="problem-solving">Problem Solving</div>
+		<div class="problem-solving">Problem Solving</div>
+		<div class="resume-child1">
+		</div>
+		<div class="user-experience">User Experience</div>
+		<div class="resume-child2">
+		</div>
+		<div class="user-design">User Design</div>
+		<div class="resume-child3">
+		</div>
+		<div class="adobe-illustrator">Adobe Illustrator</div>
+		<div class="resume-child4">
+		</div>
+		<div class="figma">Figma </div>
+		<div class="resume-child5">
+		</div>
+		<div class="adobe-after-effects">Adobe After Effects</div>
+		<div class="resume-child6">
+		</div>
+		<div class="adobe-photoshop">Adobe Photoshop</div>
+		<div class="resume-child7">
+		</div>
+		<div class="microsoft-office">Microsoft Office</div>
+		<div class="resume-child8">
+		</div>
+		<div class="miro">Miro</div>
+		<div class="resume-child9">
+		</div>
+		<div class="visual-studio-code">Visual Studio Code</div>
+		<div class="resume-child10">
+		</div>
+		<div class="whimsical">Whimsical</div>
+		<div class="resume-child11">
+		</div>
+		<div class="user-research">User Research</div>
+		<div class="resume-child12">
+		</div>
+		<div class="strong-communication">Strong Communication</div>
+		<a href = "#scrollhere"><img class="vuesaxoutlinearrow-down-icon floating-icon" alt="" src="arrow-down.svg"></a>
+		
+		<a href="https://www.linkedin.com/in/sriyakshi-sinha-43b45b28b/" target="_blank" class="social-link linkedin">
+			<span class="social-text">LinkedIn</span>
+			<img src="linkedin.svg" alt="LinkedIn Logo" class="social-logo">
+		  </a>
+		
+		  <a href="https://www.instagram.com/sriyakshii/?hl=en" target="_blank" class="social-link instagram">
+			<span class="social-text">Instagram</span>
+			<img src="instagram.svg" alt="Instagram Logo" class="social-logo">
+		  </a>
+		
+		  <a href="mailto:sriyakshisgmailcom" class="social-link email">
+			<span class="social-text">sriyakshisgmailcom</span>
+			<img src="email.svg" alt="Email Icon" class="social-logo">
+		  </a>
+
+		<div class="get-in-contact">Get In Contact</div>
+		<img class="image-49-icon" alt="" src="image 49.png">
+		
+  </div>
+  
+  
+  
+  
+</body>
+</html>

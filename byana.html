@@ -1,0 +1,566 @@
+<!DOCTYPE html>
+<html>
+<head>
+  	<meta charset="utf-8">
+  	<meta name="viewport" content="initial-scale=1, width=device-width">
+  	
+  	<link rel="stylesheet"  href="./index.css" />
+  	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Avenir:wght@400&display=swap" />
+  	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Brown Sugar:wght@400&display=swap" />
+	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
+	<script>
+window.onscroll = function() {scrollProgress()};
+
+function scrollProgress() {
+    var winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+    var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+    var scrolled = (winScroll / height) * 100;
+    document.getElementById("progressBar").style.width = scrolled + "%";
+}
+
+	</script>
+
+  	<style>
+
+.fade-in-text {
+      opacity: 0;
+      animation: fadeIn 2s ease-in-out forwards;
+    }
+
+    @keyframes fadeIn {
+      0% {
+        opacity: 0;
+      }
+      100% {
+        opacity: 1;
+      }
+	}
+
+#progressBar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 0%;
+    height: 10px;
+    background-color: #ffe100; 
+    z-index: 100; 
+}
+
+
+        .byana-child {
+  	position: absolute;
+  	top: 958.96px;
+  	left: 69px;
+  	background-color: #e8f5ff;
+  	width: 1363.5px;
+  	height: 851.2px;
+}
+.home {
+  	position: absolute;
+  	top: 46.91px;
+  	left: 1148.41px;
+  	font-size: 20.91px;
+  	color: #ffe100;
+  	text-align: center;
+}
+
+.home a {
+  	color: #fff;   
+  	text-decoration: none;   
+}
+
+.about-me {
+  	position: absolute;
+  	top: 46.91px;
+  	left: 1241.79px;
+  	font-size: 20.91px;
+  	color: #ffe100;
+  	text-align: center;
+}
+
+.about-me:hover {
+    text-decoration: underline;
+}
+.about-me a {
+  	color: #ffe100;   
+  	text-decoration: none;   
+}
+
+.resume {
+  	position: absolute;
+  	top: 46.91px;
+  	left: 1373.5px;
+  	font-size: 20.91px;
+  	color: #ffe100;
+  	text-align: center;
+}
+
+.resume:hover {
+    text-decoration: underline;
+}
+
+.resume a {
+  	color: #ffe100;   
+  	text-decoration: none;   
+}
+
+
+.byana-icon {
+  	position: absolute;
+  	top: 123.35px;
+  	left: 70.88px;
+  	width: 1363.5px;
+  	height: 775.4px;
+  	object-fit: cover;
+}
+.b-yana {
+  	position: absolute;
+  	top: 369.05px;
+  	left: 206.89px;
+  	font-size: 111.5px;
+  	letter-spacing: -0.01em;
+  	line-height: 119%;
+  	font-family: 'Brown Sugar';
+  	text-align: center;
+  	display: flex;
+  	align-items: center;
+  	justify-content: center;
+  	width: 1091.5px;
+  	height: 228.6px;
+}
+.product-description {
+  	position: absolute;
+  	top: 978.25px;
+  	left: 119.49px;
+  	letter-spacing: -0.01em;
+  	font-family: 'Brown Sugar';
+  	display: flex;
+  	align-items: center;
+  	width: 615.8px;
+  	height: 127.2px;
+}
+.an-app-which {
+  	position: absolute;
+  	top: 529.67px;
+  	left: 381.1px;
+  	font-size: 31.36px;
+  	letter-spacing: -0.01em;
+  	text-align: center;
+  	display: flex;
+  	align-items: center;
+  	justify-content: center;
+  	width: 743.1px;
+  	height: 135.9px;
+}
+.byana-item {
+  	position: absolute;
+  	top: 1036.61px;
+  	left: 708.08px;
+  	background-color: #142d47;
+  	border-top: 10.5px solid #142d47;
+  	box-sizing: border-box;
+  	width: 89.2px;
+  	height: 10.5px;
+}
+.byana-is-an {
+  	margin: 0;
+}
+.byana-is-an-container {
+  	position: absolute;
+  	top: 1126.69px;
+  	left: 160.37px;
+  	font-size: 27.88px;
+  	color: #121212;
+  	display: inline-block;
+  	width: 1149.9px;
+  	height: 597.6px;
+}
+.rectangle-div {
+  	position: absolute;
+  	top: 1865.91px;
+  	left: 69px;
+  	background-color: #e8f5ff;
+  	width: 1363.5px;
+  	height: 851.2px;
+}
+.log-in-and {
+  	position: absolute;
+  	top: 2243.49px;
+  	left: 234.59px;
+  	font-size: 24.39px;
+  	letter-spacing: 0.05em;
+  	line-height: 120%;
+  	color: #000;
+  	text-align: right;
+  	display: flex;
+  	align-items: center;
+  	width: 356.6px;
+  	height: 96px;
+}
+.imockup-google-pixel-8-pro {
+  	position: absolute;
+  	top: 1912.57px;
+  	left: 614.94px;
+  	width: 395.9px;
+  	height: 777.1px;
+  	object-fit: cover;
+}
+.imockup-google-pixel-8-pro1 {
+  	position: absolute;
+  	top: 1912.57px;
+  	left: 1010.81px;
+  	width: 396.8px;
+  	height: 777.1px;
+  	object-fit: cover;
+}
+.wireframes {
+  	position: absolute;
+  	top: 1876.36px;
+  	left: 97.5px;
+  	letter-spacing: -0.01em;
+  	font-family: 'Brown Sugar';
+  	display: flex;
+  	align-items: center;
+  	width: 324.3px;
+  	height: 127.2px;
+}
+.byana-child1 {
+  	position: absolute;
+  	top: 3679.8px;
+  	left: 70.88px;
+  	background-color: #e8f5ff;
+  	width: 1363.5px;
+  	height: 851.2px;
+}
+.wireframes1 {
+  	position: absolute;
+  	top: 3690.25px;
+  	left: 99.39px;
+  	letter-spacing: -0.01em;
+  	font-family: 'Brown Sugar';
+  	display: flex;
+  	align-items: center;
+  	width: 324.3px;
+  	height: 127.2px;
+}
+.byana-child2 {
+  	position: absolute;
+  	top: 2772.85px;
+  	left: 69px;
+  	background-color: #e8f5ff;
+  	width: 1363.5px;
+  	height: 851.2px;
+}
+.wireframes2 {
+  	position: absolute;
+  	top: 2792.89px;
+  	left: 1070.59px;
+  	letter-spacing: -0.01em;
+  	font-family: 'Brown Sugar';
+  	display: flex;
+  	align-items: center;
+  	width: 324.3px;
+  	height: 127.2px;
+}
+.byana-child3 {
+  	position: absolute;
+  	top: 4586.74px;
+  	left: 69px;
+  	background-color: #e8f5ff;
+  	width: 1363.5px;
+  	height: 851.2px;
+}
+.wireframes3 {
+  	position: absolute;
+  	top: 4606.78px;
+  	left: 1070.59px;
+  	letter-spacing: -0.01em;
+  	font-family: 'Brown Sugar';
+  	display: flex;
+  	align-items: center;
+  	width: 324.3px;
+  	height: 127.2px;
+}
+.imockup-google-pixel-8-pro2 {
+  	position: absolute;
+  	top: 2922.64px;
+  	left: 96.59px;
+  	width: 351.3px;
+  	height: 688.6px;
+  	object-fit: cover;
+}
+.imockup-google-pixel-8-pro3 {
+  	position: absolute;
+  	top: 2922.64px;
+  	left: 447.88px;
+  	width: 351.3px;
+  	height: 688.6px;
+  	object-fit: cover;
+}
+.imockup-google-pixel-8-pro4 {
+  	position: absolute;
+  	top: 2922.64px;
+  	left: 799.18px;
+  	width: 352.1px;
+  	height: 689.4px;
+  	object-fit: cover;
+}
+.home-and-booking {
+  	position: absolute;
+  	top: 3221.62px;
+  	left: 1165.08px;
+  	font-size: 24.39px;
+  	letter-spacing: 0.05em;
+  	line-height: 120%;
+  	color: #000;
+  	display: flex;
+  	align-items: center;
+  	width: 235.5px;
+  	height: 91.5px;
+}
+.payment-screens {
+  	position: absolute;
+  	top: 4057.61px;
+  	left: 389.18px;
+  	font-size: 24.39px;
+  	letter-spacing: 0.05em;
+  	line-height: 120%;
+  	color: #000;
+  	text-align: right;
+  	display: flex;
+  	align-items: center;
+  	width: 257px;
+  	height: 91.5px;
+}
+.imockup-google-pixel-8-pro5 {
+  	position: absolute;
+  	top: 3775.37px;
+  	left: 664.46px;
+  	width: 369.4px;
+  	height: 722.2px;
+  	object-fit: cover;
+}
+.imockup-google-pixel-8-pro6 {
+  	position: absolute;
+  	top: 3775.37px;
+  	left: 1033.82px;
+  	width: 366.7px;
+  	height: 722.2px;
+  	object-fit: cover;
+}
+.imockup-google-pixel-8-pro7 {
+  	position: absolute;
+  	top: 4723.45px;
+  	left: 79.51px;
+  	width: 365.6px;
+  	height: 714.5px;
+  	object-fit: cover;
+}
+.imockup-google-pixel-8-pro8 {
+  	position: absolute;
+  	top: 4723.45px;
+  	left: 456.07px;
+  	width: 363.9px;
+  	height: 714.5px;
+  	object-fit: cover;
+}
+.imockup-google-pixel-8-pro9 {
+  	position: absolute;
+  	top: 4723.45px;
+  	left: 809.09px;
+  	width: 363.9px;
+  	height: 714.5px;
+  	object-fit: cover;
+}
+.tracking-bus-screens {
+  	position: absolute;
+  	top: 5004.19px;
+  	left: 1184.81px;
+  	font-size: 24.39px;
+  	letter-spacing: 0.05em;
+  	line-height: 120%;
+  	color: #000;
+  	display: flex;
+  	align-items: center;
+  	width: 237.2px;
+  	height: 88.3px;
+}
+.social-link {
+  text-decoration: none;
+  color: #000;
+  font-size: 18.04px;
+  letter-spacing: -0.01em;
+  position: absolute;
+  display: inline-block;
+}
+
+.linkedin {
+	top: 5663.07px;
+    left: 886.88px;
+  color:#ffe100
+
+}
+
+.instagram {
+	top: 5663.07px;
+    left: 551.43px;
+  color:#ffe100
+}
+
+.email {
+	top: 5663.07px;
+    left: 673.15px;
+  color:#ffe100
+
+}
+
+.social-logo {
+  width: 48px; 
+  height: 48px; 
+  opacity: 0; 
+  transition: opacity 0.3s ease; 
+  position: absolute; 
+  top: 50%; 
+  left: 50%; 
+  transform: translate(-50%, -50%); 
+}
+
+.social-text {
+  transition: opacity 0.3s ease;
+  position: relative; 
+  z-index: 1; 
+}
+
+.social-link:hover .social-text {
+  opacity: 0; 
+}
+
+.social-link:hover .social-logo {
+  opacity: 1; 
+}
+
+.get-in-contact {
+  	position: absolute;
+  	top: 5563.61px;
+  	left: 633.16px;
+  	font-size: 32.06px;
+  	letter-spacing: -0.01em;
+  	font-family: 'Brown Sugar';
+  	color: #ffe100;
+}
+.s-logo-01-4 {
+  	position: absolute;
+  	top: 25.92px;
+  	left: 20.24px;
+  	width: 48.8px;
+  	height: 70.7px;
+  	object-fit: cover;
+}
+.byana {
+  	width: 100%;
+  	position: relative;
+  	background-color: #142d47;
+  	height: 5799.1px;
+  	overflow: hidden;
+  	text-align: left;
+  	font-size: 55.75px;
+  	color: #142d47;
+  	font-family: Avenir;
+}
+
+
+    </style>
+  	
+</head>
+<body>
+  	
+<div id="progressBar"></div>
+
+<script src="script.js"></script>
+
+  	<div class="byana">
+    		<div class="byana-child">
+    		</div>
+    		<div class="home"><a href="index.html"> Home</a></div>
+			<div class="about-me"><a href="about-me.html"> About Me</a></div>
+			<div class="resume"><a href="resume.html" >Resume</a></div>
+    		<img class="byana-icon w3-opacity w3-hover-opacity-off" alt="" src="byanacover.png">
+    		
+    		<div class="b-yana fade-in-text">B YANA</div>
+    		<div class="product-description">Product Description</div>
+    		<div class="an-app-which fade-in-text">An app which allows users to book BMTC Tickets </div>
+    		<div class="byana-item">
+    		</div>
+    		<div class="product-description">Product Description</div>
+    		<div class="byana-item">
+    		</div>
+    		<div class="byana-is-an-container">
+      			<p class="byana-is-an">"BYANA" is an app I designed to simplify the process of booking BMTC bus tickets. With busy commuters in mind, the app offers a quick search feature to find the nearest bus stops and optimal routes. It also provides real-time bus tracking, ensuring users can see arrival times and even get updates on how crowded the bus is before boarding.</p>
+      			<p class="byana-is-an">&nbsp;</p>
+      			<p class="byana-is-an">To make the travel experience even smoother, "BYANA" includes notifications for when a bus is arriving, as well as reminders when it’s time to get off at your stop. One of the standout features is seat reservation, which allows users to secure a comfortable spot ahead of time. I also added parental controls, giving parents the ability to book and track their children’s journeys, providing peace of mind.</p>
+      			<p class="byana-is-an">&nbsp;</p>
+      			<p class="byana-is-an">The app’s vibrant blue color scheme reflects both energy and reliability, making it visually engaging while conveying a sense of trust and ease. The design is clean and efficient, ensuring a hassle-free experience for everyday commuters and families alike, helping them navigate the city with confidence.</p>
+    		</div>
+    		<div class="rectangle-div">
+    		</div>
+    		<div class="log-in-and">Log In and Sign Up Screens</div>
+    		<img class="imockup-google-pixel-8-pro" alt="" src="iMockup - Google Pixel 8 Pro2-1.png">
+    		
+    		<img class="imockup-google-pixel-8-pro1" alt="" src="iMockup - Google Pixel 8 Pro2-2.png">
+    		
+    		<div class="wireframes">wireframes</div>
+    		<div class="byana-child1">
+    		</div>
+    		<div class="wireframes1">wireframes</div>
+    		<div class="byana-child2">
+    		</div>
+    		<div class="wireframes2">wireframes</div>
+    		<div class="byana-child3">
+    		</div>
+    		<div class="wireframes3">wireframes</div>
+    		<img class="imockup-google-pixel-8-pro2" alt="" src="iMockup - Google Pixel 8 Pro2-3.png">
+    		
+    		<img class="imockup-google-pixel-8-pro3" alt="" src="iMockup - Google Pixel 8 Pro2-4.png">
+    		
+    		<img class="imockup-google-pixel-8-pro4" alt="" src="iMockup - Google Pixel 8 Pro2--5.png">
+    		
+    		<div class="home-and-booking">Home and Booking Screens</div>
+    		<div class="payment-screens">Payment Screens</div>
+    		<img class="imockup-google-pixel-8-pro5" alt="" src="iMockup - Google Pixel 8 Pro2-6.png">
+    		
+    		<img class="imockup-google-pixel-8-pro6" alt="" src="iMockup - Google Pixel 8 Pro2-7.png">
+    		
+    		<img class="imockup-google-pixel-8-pro7" alt="" src="iMockup - Google Pixel 8 Pro2-8.png">
+    		
+    		<img class="imockup-google-pixel-8-pro8" alt="" src="iMockup - Google Pixel 8 Pro2-9.png">
+    		
+    		<img class="imockup-google-pixel-8-pro9" alt="" src="iMockup - Google Pixel 8 Pro2-10.png">
+    		
+    		<div class="tracking-bus-screens">Tracking Bus Screens</div>
+    		
+		<a href="https://www.linkedin.com/in/sriyakshi-sinha-43b45b28b/" target="_blank" class="social-link linkedin">
+			<span class="social-text">LinkedIn</span>
+			<img src="linkedin.svg" alt="LinkedIn Logo" class="social-logo">
+		  </a>
+		
+		  <a href="https://www.instagram.com/sriyakshii/?hl=en" target="_blank" class="social-link instagram">
+			<span class="social-text">Instagram</span>
+			<img src="instagram.svg" alt="Instagram Logo" class="social-logo">
+		  </a>
+		
+		  <a href="mailto:sriyakshisgmailcom" class="social-link email">
+			<span class="social-text">sriyakshisgmailcom</span>
+			<img src="email.svg" alt="Email Icon" class="social-logo">
+		  </a>
+
+		    <div class="get-in-contact">Get In Contact</div>
+    		<img class="s-logo-01-4" alt="" src="s logo-01 4.png">
+    		
+  	</div>
+  	
+  	
+  	
+  	
+</body>
+</html>

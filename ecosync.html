@@ -1,0 +1,675 @@
+<!DOCTYPE html>
+<html>
+<head>
+  	<meta charset="utf-8">
+  	<meta name="viewport" content="initial-scale=1, width=device-width">
+  	
+  	<link rel="stylesheet"  href="./index.css" />
+  	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Avenir:wght@400&display=swap" />
+  	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Brown Sugar:wght@400&display=swap" />
+  	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400&display=swap" />
+	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
+  	<script>
+window.onscroll = function() {scrollProgress()};
+
+function scrollProgress() {
+    var winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+    var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+    var scrolled = (winScroll / height) * 100;
+    document.getElementById("progressBar").style.width = scrolled + "%";
+}
+
+	</script>
+
+  	<style>
+
+.fade-in-text {
+      opacity: 0;
+      animation: fadeIn 2s ease-in-out forwards;
+    }
+
+    @keyframes fadeIn {
+      0% {
+        opacity: 0;
+      }
+      100% {
+        opacity: 1;
+      }
+	}
+
+#progressBar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 0%;
+    height: 10px;
+    background-color: #ffe100; 
+    z-index: 100; 
+}
+
+
+        .ecosync-icon {
+  	position: absolute;
+  	top: 128.04px;
+  	left: 69px;
+  	width: 1365.4px;
+  	height: 775.1px;
+  	object-fit: cover;
+}
+.ecosync-child {
+  	position: absolute;
+  	top: 1872.77px;
+  	left: 65.51px;
+  	background-color: #e8f5ff;
+  	width: 1363.5px;
+  	height: 851.2px;
+}
+.home {
+  	position: absolute;
+  	top: 46.91px;
+  	left: 1148.41px;
+  	font-size: 20.91px;
+  	text-align: center;
+}
+
+.home a {
+  	color: #fff;   
+  	text-decoration: none;   
+}
+
+.about-me {
+  	position: absolute;
+  	top: 46.91px;
+  	left: 1241.79px;
+  	font-size: 20.91px;
+  	text-align: center;
+}
+
+.about-me:hover {
+    text-decoration: underline;
+}
+
+.about-me a {
+  	color: #ffe100;   
+  	text-decoration: none;   
+}
+
+.resume {
+  	position: absolute;
+  	top: 46.91px;
+  	left: 1373.5px;
+  	font-size: 20.91px;
+  	text-align: center;
+}
+
+.resume:hover {
+    text-decoration: underline;
+}
+
+.resume a {
+  	color: #ffe100;   
+  	text-decoration: none;   
+}
+
+.ecosync1 {
+  	position: absolute;
+  	top: 369.05px;
+  	left: 206.89px;
+  	font-size: 111.5px;
+  	letter-spacing: -0.01em;
+  	line-height: 119%;
+  	font-family: 'Brown Sugar';
+  	color: #142d47;
+  	text-align: center;
+  	display: flex;
+  	align-items: center;
+  	justify-content: center;
+  	width: 1091.5px;
+  	height: 228.6px;
+}
+.ecosync-item {
+  	position: absolute;
+  	top: 956.27px;
+  	left: 70.88px;
+  	background-color: #e8f5ff;
+  	width: 1363.5px;
+  	height: 851.2px;
+}
+.product-description {
+  	position: absolute;
+  	top: 975.56px;
+  	left: 121.37px;
+  	letter-spacing: -0.01em;
+  	font-family: 'Brown Sugar';
+  	color: #142d47;
+  	display: flex;
+  	align-items: center;
+  	width: 615.8px;
+  	height: 127.2px;
+}
+.an-app-which {
+  	position: absolute;
+  	top: 529.67px;
+  	left: 419.36px;
+  	font-size: 31.36px;
+  	letter-spacing: -0.01em;
+  	color: #142d47;
+  	white-space: pre-wrap;
+  	text-align: center;
+  	display: flex;
+  	align-items: center;
+  	justify-content: center;
+  	width: 662.8px;
+  	height: 135.9px;
+}
+.ecosync-inner {
+  	position: absolute;
+  	top: 1033.93px;
+  	left: 712.09px;
+  	background-color: #142d47;
+  	border-top: 10.5px solid #142d47;
+  	box-sizing: border-box;
+  	width: 89.2px;
+  	height: 10.5px;
+}
+.problem-statement {
+  	margin: 0;
+  	font-size: 27.9px;
+}
+.users-do-not {
+  	margin: 0;
+}
+.people-wanting-to-save-money {
+  	margin-bottom: 0px;
+}
+.environmentally-conscious-peop {
+  	margin: 0;
+  	font-family: inherit;
+  	padding-left: 33px;
+}
+.problem-statement-users-container {
+  	position: absolute;
+  	top: 1999.55px;
+  	left: 172.35px;
+  	color: #121212;
+  	display: inline-block;
+  	width: 1149.9px;
+  	height: 597.6px;
+  	font-size: 24.4px;
+}
+.rectangle-div {
+  	position: absolute;
+  	top: 3686.66px;
+  	left: 65.51px;
+  	background-color: #e8f5ff;
+  	width: 1363.5px;
+  	height: 851.2px;
+}
+.user-persona {
+  	position: absolute;
+  	top: 3705.95px;
+  	left: 116px;
+  	letter-spacing: -0.01em;
+  	font-family: 'Brown Sugar';
+  	color: #142d47;
+  	display: flex;
+  	align-items: center;
+  	width: 615.8px;
+  	height: 127.2px;
+}
+.line-div {
+  	position: absolute;
+  	top: 3764.32px;
+  	left: 522.44px;
+  	background-color: #142d47;
+  	border-top: 10.5px solid #142d47;
+  	box-sizing: border-box;
+  	width: 89.2px;
+  	height: 10.5px;
+}
+.ecosync-child1 {
+  	position: absolute;
+  	top: 2779.72px;
+  	left: 65.51px;
+  	background-color: #e8f5ff;
+  	width: 1363.5px;
+  	height: 851.2px;
+}
+.tam-total-addressable {
+  	position: absolute;
+  	top: 2856.41px;
+  	left: 133.74px;
+  	font-size: 27.88px;
+  	line-height: 86.24px;
+  	color: #121212;
+  	display: inline-block;
+  	width: 967.4px;
+}
+.unique-selling-point {
+  	position: absolute;
+  	top: 3208.35px;
+  	left: 133.74px;
+  	font-size: 27.88px;
+  	line-height: 86.24px;
+  	color: #121212;
+  	display: inline-block;
+  	width: 967.4px;
+}
+.the-total-addressable-container {
+  	position: absolute;
+  	top: 2958.33px;
+  	left: 134.56px;
+  	font-size: 24.39px;
+  	line-height: 34.85px;
+  	color: #000;
+  	display: inline-block;
+  	width: 1230px;
+}
+.actionable-insights-one-can-g {
+  	margin: 0;
+  	font-family: inherit;
+  	font-size: inherit;
+  	padding-left: 33px;
+}
+.we-focus-on-container {
+  	position: absolute;
+  	top: 3310.27px;
+  	left: 134.56px;
+  	font-size: 24.39px;
+  	line-height: 34.85px;
+  	color: #000;
+  	display: inline-block;
+  	width: 1230px;
+}
+.ecosync-child2 {
+  	position: absolute;
+  	top: 3214.44px;
+  	left: 681.59px;
+  	box-shadow: 0px 3.4845130443573px 3.48px rgba(0, 0, 0, 0.25);
+  	border-radius: 25.26px;
+  	background-color: #739072;
+  	width: 693.4px;
+  	height: 95.8px;
+}
+.congratulations-you-have {
+  	position: absolute;
+  	top: 3229.25px;
+  	left: 772.18px;
+  	font-size: 17.42px;
+  	line-height: 30.49px;
+  	font-family: Inter;
+  	color: #fff;
+  	display: inline-block;
+  	width: 582.8px;
+  	height: 65.3px;
+}
+.group-icon {
+  	position: absolute;
+  	top: 3242.32px;
+  	left: 700.75px;
+  	width: 46.2px;
+  	height: 39.7px;
+}
+.ecosync-child3 {
+  	position: absolute;
+  	top: 4593.61px;
+  	left: 65.51px;
+  	background-color: #e8f5ff;
+  	width: 1363.5px;
+  	height: 851.2px;
+}
+.branding {
+  	position: absolute;
+  	top: 4612.9px;
+  	left: 116px;
+  	letter-spacing: -0.01em;
+  	font-family: 'Brown Sugar';
+  	color: #142d47;
+  	display: flex;
+  	align-items: center;
+  	width: 615.8px;
+  	height: 127.2px;
+}
+.image-61-icon {
+  	position: absolute;
+  	top: 4639.59px;
+  	left: 108.52px;
+  	width: 1277.5px;
+  	height: 759.2px;
+  	object-fit: cover;
+}
+.ecosync-child4 {
+  	position: absolute;
+  	top: 5519.84px;
+  	left: 65.51px;
+  	background-color: #e8f5ff;
+  	width: 1363.5px;
+  	height: 851.2px;
+}
+.ecosync-enables-users-container {
+  	position: absolute;
+  	top: 5816.01px;
+  	left: 875.52px;
+  	font-size: 24.39px;
+  	line-height: 53.14px;
+  	color: #000;
+  	display: inline-block;
+  	width: 479.3px;
+  	height: 318.8px;
+}
+.imockup-google-pixel-8-pro {
+  	position: absolute;
+  	top: 5600.35px;
+  	left: 90.02px;
+  	width: 383px;
+  	height: 750.2px;
+  	object-fit: cover;
+}
+.imockup-google-pixel-8-pro1 {
+  	position: absolute;
+  	top: 5600.35px;
+  	left: 473.01px;
+  	width: 382.2px;
+  	height: 750.2px;
+  	object-fit: cover;
+}
+.wireframes {
+  	position: absolute;
+  	top: 5559.99px;
+  	left: 1046.88px;
+  	letter-spacing: -0.01em;
+  	font-family: 'Brown Sugar';
+  	color: #142d47;
+  	display: flex;
+  	align-items: center;
+  	width: 615.8px;
+  	height: 127.2px;
+}
+.ecosync-child5 {
+  	position: absolute;
+  	top: 6446.08px;
+  	left: 67.39px;
+  	background-color: #e8f5ff;
+  	width: 1363.5px;
+  	height: 851.2px;
+}
+.ecosync-allows-users {
+  	position: absolute;
+  	top: 6765.78px;
+  	left: 104.04px;
+  	font-size: 24.39px;
+  	line-height: 53.14px;
+  	color: #000;
+  	display: inline-block;
+  	width: 517.4px;
+  	height: 279.2px;
+}
+.imockup-google-pixel-8-pro2 {
+  	position: absolute;
+  	top: 6506.1px;
+  	left: 637.34px;
+  	width: 372.5px;
+  	height: 731.1px;
+  	object-fit: cover;
+}
+.imockup-google-pixel-8-pro3 {
+  	position: absolute;
+  	top: 6506.1px;
+  	left: 1043.88px;
+  	width: 372.5px;
+  	height: 731.1px;
+  	object-fit: cover;
+}
+.wireframes1 {
+  	position: absolute;
+  	top: 6465.36px;
+  	left: 117.88px;
+  	letter-spacing: -0.01em;
+  	font-family: 'Brown Sugar';
+  	color: #142d47;
+  	display: flex;
+  	align-items: center;
+  	width: 615.8px;
+  	height: 127.2px;
+}
+.ecosync-is-an-container {
+  	position: absolute;
+  	top: 1118.22px;
+  	left: 172.35px;
+  	font-size: 24.39px;
+  	line-height: 43.56px;
+  	color: #000;
+  	display: inline-block;
+  	width: 1149.9px;
+  	height: 648.7px;
+}
+.image-60-icon {
+  	position: absolute;
+  	top: 3816.58px;
+  	left: 222.44px;
+  	width: 1060.4px;
+  	height: 702.4px;
+  	object-fit: cover;
+}
+
+.social-link {
+  text-decoration: none;
+  color: #000;
+  font-size: 18.04px;
+  letter-spacing: -0.01em;
+  position: absolute;
+  display: inline-block;
+}
+
+.linkedin {
+	top: 7554.09px;
+    left: 886.88px;
+  color:#ffe100
+
+}
+
+.instagram {
+	top: 7554.09px;
+    left: 551.43px;
+  color:#ffe100
+}
+
+.email {
+	top: 7554.09px;
+    left: 673.15px;
+  color:#ffe100
+
+}
+
+.social-logo {
+  width: 48px; 
+  height: 48px; 
+  opacity: 0; 
+  transition: opacity 0.3s ease; 
+  position: absolute; 
+  top: 50%; 
+  left: 50%; 
+  transform: translate(-50%, -50%); 
+}
+
+.social-text {
+  transition: opacity 0.3s ease;
+  position: relative; 
+  z-index: 1; 
+} 
+.social-link:hover .social-text {
+  opacity: 0; 
+}
+
+.social-link:hover .social-logo {
+  opacity: 1; 
+}
+
+.get-in-contact {
+  	position: absolute;
+  	top: 7445.51px;
+  	left: 631.56px;
+  	font-size: 32.06px;
+  	letter-spacing: -0.01em;
+  	font-family: 'Brown Sugar';
+}
+.s-logo-01-3 {
+  	position: absolute;
+  	top: 25.92px;
+  	left: 20.24px;
+  	width: 48.8px;
+  	height: 70.7px;
+  	object-fit: cover;
+}
+.ecosync {
+  	width: 100%;
+  	position: relative;
+  	background-color: #142d47;
+  	height: 7692.9px;
+  	overflow: hidden;
+  	text-align: left;
+  	font-size: 55.75px;
+  	color: #ffe100;
+  	font-family: Avenir;
+}
+
+
+    </style>
+  	
+</head>
+<body>
+	   <div id="progressBar"></div>
+
+   
+	   <script src="script.js"></script>
+  	<div class="ecosync">
+    		<img class="ecosync-icon w3-opacity w3-hover-opacity-off"  alt="ecosync" src="ecosynccover.png">
+    		
+    		<div class="ecosync-child">
+    		</div>
+			<div class="home"><a href="index.html"> Home</a></div>
+			<div class="about-me"><a href="about-me.html"> About Me</a></div>
+			<div class="resume"><a href="resume.html" >Resume</a></div>
+    		<div class="ecosync1 fade-in-text">ecosync</div>
+    		<div class="ecosync-item">
+    		</div>
+    		<div class="product-description">Product Description</div>
+    		<div class="an-app-which fade-in-text">An app which tracks user’s  carbon footprint and informs them how to reduce it</div>
+    		<div class="ecosync-inner">
+    		</div>
+    		<div class="problem-statement-users-container">
+      			<p class="problem-statement">Problem statement:</p>
+      			<p class="users-do-not">Users do not always understand or know the full extent of how their energy consumption affects their carbon footprint over a period of time.</p>
+      			<p class="users-do-not">They also find it difficult to build habits that promote sustainable living.</p>
+      			<p class="users-do-not">&nbsp;</p>
+      			<p class="problem-statement">Who are our users?</p>
+      			<ul class="environmentally-conscious-peop">
+        				<li class="people-wanting-to-save-money">
+          					<span>Environmentally conscious people and/or</span>
+        				</li>
+        				<li class="people-wanting-to-save-money">
+          					<span>People wanting to save money</span>
+        				</li>
+      			</ul>
+      			<p class="users-do-not">&nbsp;</p>
+      			<p class="problem-statement">What we plan to address with our system:</p>
+      			<ul class="environmentally-conscious-peop">
+        				<li class="people-wanting-to-save-money">
+          					<span>A product that is attached to the meter box of a household, that connects to an app.</span>
+        				</li>
+        				<li class="people-wanting-to-save-money">
+          					<span>An application platform to view and visualise energy consumption on a daily up to a yearly basis, compared to the ideal consumption levels set by the government, as well as to </span>
+        				</li>
+        				<li class="people-wanting-to-save-money">
+          					<span>Users can gain insights from future consumption prediction models and receive suggestions for lowering their levels to both conserve energy as well as lower the cost per month.</span>
+        				</li>
+        				<li>
+          					<span>Users can log/track their progress in terms of implementing sustainable practices, they can maintain a streak and based on user data and habits, the app would also deliver targeted notifications with actionable tips for further energy reduction/info on the importance of reducing carbon footprint.</span>
+        				</li>
+      			</ul>
+    		</div>
+    		<div class="rectangle-div">
+    		</div>
+    		<div class="user-persona">USER PERSONA</div>
+    		<div class="line-div">
+    		</div>
+    		<div class="ecosync-child1">
+    		</div>
+    		<div class="tam-total-addressable">TAM (Total Addressable Market)</div>
+    		<div class="unique-selling-point">Unique Selling Point</div>
+    		<div class="the-total-addressable-container">
+      			<p class="users-do-not">The total addressable market (TAM) for energy efficiency is expansive, covering various sectors such as residential, commercial, industrial, transportation, and emerging technologies. The global energy management systems market in terms of revenue was estimated to be worth $40.7 billion in 2023 and is poised to reach $75.6 billion by 2028, growing at a CAGR of 13.2% from 2023 to 2028. </p>
+      			<p class="users-do-not">The energy efficiency market in India is estimated to be worth INR 150,000 Crore, out of which only 5% potential has been tapped by ESCOs (energy service companies) so far.</p>
+    		</div>
+    		<div class="we-focus-on-container">
+      			<p class="users-do-not">We focus on Personal Impact:</p>
+      			<ul class="actionable-insights-one-can-g">
+        				<li class="people-wanting-to-save-money">Actionable Insights: One can go beyond just tracking usage. Translate data into clear, personalised recommendations for users to reduce their footprint and see the direct impact of their choices.</li>
+        				<li class="people-wanting-to-save-money">Focus on Behaviour Change: Utilisation of reminders, gamification, and educational content to nudge users towards sustainable habits and long-term behaviour change.</li>
+        				<li>Empowerment Through Knowledge: Equip users with the knowledge and tools to understand their carbon footprint and make informed decisions about their energy consumption.</li>
+      			</ul>
+    		</div>
+    		<div class="ecosync-child2">
+    		</div>
+    		<div class="congratulations-you-have">Congratulations! You have reduced your carbon Footprint by 31% in the last week. This creates a significant difference in the environment!</div>
+    		<img class="group-icon" alt="icon" src="Group 20.svg">
+    		
+    		<div class="ecosync-child3">
+    		</div>
+    		<div class="branding">BRANDING</div>
+    		<img class="image-61-icon" alt="branding" src="branding.png">
+    		
+    		<div class="ecosync-child4">
+    		</div>
+    		<div class="ecosync-enables-users-container">
+      			<p class="users-do-not">EcoSync enables users to check her current energy levels while also reminding the user their energy levels in tangible ways. </p>
+      			<p class="users-do-not">The analysis provides the users with a detailed graph with their monthly energy consumption along with the predicted monthly electricity bills.</p>
+    		</div>
+    		<img class="imockup-google-pixel-8-pro" alt="mockup" src="iMockup - Google Pixel 8 Pro1.png">
+    		
+    		<img class="imockup-google-pixel-8-pro1" alt="mockup" src="iMockup - Google Pixel 8 Pro2.png">
+    		
+    		<div class="wireframes">WIREFRAMES </div>
+    		<div class="ecosync-child5">
+    		</div>
+    		<div class="ecosync-allows-users">EcoSync allows users to note down environmentally friendly tasks, which provides the user with a percentage of how much energy consumption they reduced. This enables the users with motivation.</div>
+    		<img class="imockup-google-pixel-8-pro2" alt="mockup" src="iMockup - Google Pixel 8 Pro3.png">
+    		
+    		<img class="imockup-google-pixel-8-pro3" alt="mockup" src="iMockup - Google Pixel 8 Pro4.png">
+    		
+    		<div class="wireframes1">WIREFRAMES </div>
+    		<div class="ecosync-is-an-container">
+      			<p class="users-do-not">"EcoSync" is an app I designed to help users track their carbon footprint by analyzing their daily activities, like energy consumption and travel habits. The goal was to create an intuitive and visually appealing tool that empowers users to make more sustainable choices.</p>
+      			<p class="users-do-not">&nbsp;</p>
+      			<p class="users-do-not">The app goes beyond just tracking; it offers personalized insights and recommendations tailored to each user’s lifestyle. Whether it’s reducing energy usage or cutting down on waste, "EcoSync" provides actionable steps to help users transition toward more eco-friendly habits. A key feature of the app is the ability for users to set sustainability goals and monitor their progress over time, encouraging long-term commitment to reducing their carbon footprint.</p>
+      			<p class="users-do-not">&nbsp;</p>
+      			<p class="users-do-not">To match the app's eco-conscious mission, I chose a color scheme of muted greens and yellows, which fosters a calm and environmentally friendly vibe. The soft tones reinforce the app’s focus on sustainability, creating a soothing yet impactful user experience that reflects the positive environmental changes it aims to inspire.</p>
+    		</div>
+    		<img class="image-60-icon" alt="persona" src="persona.png">
+    		
+		<a href="https://www.linkedin.com/in/sriyakshi-sinha-43b45b28b/" target="_blank" class="social-link linkedin">
+			<span class="social-text">LinkedIn</span>
+			<img src="linkedin.svg" alt="LinkedIn Logo" class="social-logo">
+		  </a>
+		
+		  <a href="https://www.instagram.com/sriyakshii/?hl=en" target="_blank" class="social-link instagram">
+			<span class="social-text">Instagram</span>
+			<img src="instagram.svg" alt="Instagram Logo" class="social-logo">
+		  </a>
+		
+		  <a href="mailto:sriyakshisgmailcom" class="social-link email">
+			<span class="social-text">sriyakshisgmailcom</span>
+			<img src="email.svg" alt="Email Icon" class="social-logo">
+		  </a>
+
+		<div class="get-in-contact">Get In Contact</div>
+    		<img class="s-logo-01-3" alt="logo" src="s logo-01 3.png">
+    		
+  	</div>
+  	</div>
+  	
+  	
+  	
+</body>
+</html>

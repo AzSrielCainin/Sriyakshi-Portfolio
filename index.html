@@ -1,0 +1,678 @@
+<!DOCTYPE html>
+<html>
+<head>
+  	<meta charset="utf-8">
+  	<meta name="viewport" content="initial-scale=1.0, width=device-width">
+  	
+  	<link rel="stylesheet"  href="./index.css" />
+  	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Avenir:wght@400&display=swap" />
+  	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Brown Sugar:wght@400&display=swap" />
+	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
+  	
+  	<style>
+
+		/* floating arrow style */
+.floating-icon {
+      width: 100px;
+      height: 100px;
+      animation: float 2s infinite ease-in-out;
+    }
+
+    @keyframes float {
+      0%, 100% {
+        transform: translateY(0);
+      }
+      50% {
+        transform: translateY(-20px);
+      }
+    }
+
+
+	/* smooth scrolling feature */
+    html {
+    scroll-behavior: smooth;
+    overflow-x:hidden;
+}
+
+
+		.home-child {
+  	position: absolute;
+  	top: 0px;
+  	left: 0px;
+  	background-color: #142d47;
+  	width: 1728px;
+  	height: 5309px;
+}
+.uiux-designer {
+  	position: absolute;
+  	top: 449.5px;
+  	left: 473.89px;
+  	letter-spacing: -0.01em;
+  	text-align: center;
+  	display: flex;
+  	align-items: center;
+  	justify-content: center;
+  	width: 557.5px;
+  	height: 135.9px;
+}
+/* button */
+.lorem-ipsum {
+  	position: relative;
+}
+
+/* button wrapper */
+.lorem-ipsum-wrapper {
+  	position: absolute;
+  	top: 649.86px;
+  	left: 629.83px;
+  	backdrop-filter: blur(30.49px);
+  	border-radius: 35.72px;
+  	background-color: rgba(166, 166, 166, 0.1);
+  	border: 0.9px solid rgba(255, 255, 255, 0.5);
+  	box-sizing: border-box;
+  	width: 245.7px;
+  	height: 72.3px;
+  	display: flex;
+  	flex-direction: row;
+  	align-items: center;
+  	justify-content: center;
+  	padding: 17.4px;
+  	text-align: center;
+  	font-size: 20.91px;
+  	color: #fff8f8;
+	cursor: pointer; 
+	transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.lorem-ipsum-wrapper a {
+  	color: #fff; 
+  	text-decoration: none; 
+} 
+
+/* Hover effect: darker opacity */
+.lorem-ipsum-wrapper:hover {
+    background-color: rgba(166, 166, 166, 0.6); /* Darker opacity on hover */
+    color: #fff8f8; 
+}
+
+/* Pressed effect: yellow background with blue text */
+.lorem-ipsum-wrapper:active {
+    background-color: #FFE100; /* Yellow background */
+    color: #142D47; /* Blue text on press */
+}
+
+.home-item {
+  	position: absolute;
+  	top: -698.61px;
+  	left: -683.37px;
+  	border-radius: 50%;
+  	background-color: #fb453a;
+  	width: 1277.7px;
+  	height: 1306.2px;
+}
+.s-logo-01-1 {
+  	position: absolute;
+  	top: 13.23px;
+  	left: 15.58px;
+  	width: 48.8px;
+  	height: 70.7px;
+  	object-fit: cover;
+}
+.home-inner {
+  	position: absolute;
+  	top: 358.67px;
+  	left: 1041.99px;
+  	background-color: #fb453a;
+  	width: 463.3px;
+  	height: 497.7px;
+}
+.sriyakshi-sinha {
+  	position: absolute;
+  	top: 322.32px;
+  	left: 206.89px;
+  	font-size: 111.5px;
+  	letter-spacing: -0.01em;
+  	font-family: 'Brown Sugar';
+  	text-align: center;
+  	display: flex;
+  	align-items: center;
+  	justify-content: center;
+  	width: 1091.5px;
+  	height: 127.2px;
+}
+
+/* transtition for circle */
+@keyframes w3-animate-left {
+    from {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+/* trasntition for sqaure */
+@keyframes w3-animate-right {
+    from {
+        transform: translateX(100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+
+.home-item {
+    animation: w3-animate-left 1s forwards; 
+}
+ 
+.home-inner {
+    animation: w3-animate-right 1s forwards; 
+}
+
+.design-projects {
+  	position: absolute;
+  	top: 1011.97px;
+  	left: 58.08px;
+  	font-size: 111.5px;
+  	letter-spacing: -0.01em;
+  	font-family: 'Brown Sugar';
+  	color: #fb453a;
+  	white-space: pre-wrap;
+  	display: flex;
+  	align-items: center;
+  	width: 925px;
+  	height: 127.2px;
+}
+.four-squares {
+  	position: absolute;
+  	top: 2382.99px;
+  	left: 420.27px;
+  	letter-spacing: -0.01em;
+}
+.four-squares:hover {
+    text-decoration: underline;
+}
+/* so that text doesnt become blue */
+.four-squares a {
+  	color: #ffe100; 
+  	text-decoration: none; 
+}
+
+.a-website-for {
+  	position: absolute;
+  	top: 2471.17px;
+  	left: 92.24px;
+  	font-size: 31.36px;
+  	letter-spacing: -0.01em;
+  	color: #e1e1e1;
+  	text-align: right;
+  	display: flex;
+  	align-items: center;
+  	width: 604.2px;
+}
+.line-div {
+  	position: absolute;
+  	top: 2455.39px;
+  	left: 283.44px;
+  	border-top: 0.9px solid #fff;
+  	box-sizing: border-box;
+  	width: 413.4px;
+  	height: 0.9px;
+}
+.ameya-engineering-solutions {
+  	position: absolute;
+  	top: 2783.94px;
+  	left: 154.31px;
+  	letter-spacing: -0.01em;
+  	text-align: center;
+}
+
+.ameya-engineering-solutions:hover {
+    text-decoration: underline;
+}
+.ameya-engineering-solutions a {
+  	color: #ffe100; 
+  	text-decoration: none; 
+}
+
+.a-website-for1 {
+  	position: absolute;
+  	top: 2872.98px;
+  	left: 174.61px;
+  	font-size: 31.36px;
+  	letter-spacing: -0.01em;
+  	color: #e1e1e1;
+}
+.home-child1 {
+  	position: absolute;
+  	top: 2857.85px;
+  	left: 283.17px;
+  	border-top: 0.9px solid #fff;
+  	box-sizing: border-box;
+  	width: 413.4px;
+  	height: 0.9px;
+}
+.niyati {
+  	position: absolute;
+  	top: 3367.47px;
+  	left: 808.89px;
+  	letter-spacing: -0.01em;
+  	text-align: center;
+}
+
+.niyati:hover {
+    text-decoration: underline;
+}
+
+.niyati a {
+  	color: #ffe100; 
+  	text-decoration: none; 
+}
+
+.a-service-catered {
+  	position: absolute;
+  	top: 3451.54px;
+  	left: 808.89px;
+  	font-size: 31.36px;
+  	letter-spacing: -0.01em;
+  	color: #e1e1e1;
+  	display: flex;
+  	align-items: center;
+  	width: 554.5px;
+}
+.home-child2 {
+  	position: absolute;
+  	top: 3433.72px;
+  	left: 808.46px;
+  	border-top: 0.9px solid #fff;
+  	box-sizing: border-box;
+  	width: 413.4px;
+  	height: 0.9px;
+}
+.swayam {
+  	position: absolute;
+  	top: 3785.98px;
+  	left: 808.89px;
+  	letter-spacing: -0.01em;
+}
+.swayam:hover {
+    text-decoration: underline;
+}
+
+.swayam a {
+  	color: #ffe100; 
+  	text-decoration: none; 
+}
+
+.redesign-of-swayam- {
+  	position: absolute;
+  	top: 3867.82px;
+  	left: 808.89px;
+  	font-size: 31.36px;
+  	letter-spacing: -0.01em;
+  	color: #e1e1e1;
+  	white-space: pre-wrap;
+  	display: flex;
+  	align-items: center;
+  	width: 554.5px;
+}
+.home-child3 {
+  	position: absolute;
+  	top: 3850px;
+  	left: 808.46px;
+  	border-top: 0.9px solid #fff;
+  	box-sizing: border-box;
+  	width: 413.4px;
+  	height: 0.9px;
+}
+.vuesaxoutlinearrow-down-icon {
+  	position: absolute;
+  	top: 894.65px;
+  	left: 1434.75px;
+  	width: 55.8px;
+  	height: 56.6px;
+}
+.home1 {
+  	position: absolute;
+  	top: 34.22px;
+  	left: 1160.88px;
+  	font-size: 20.91px;
+  	text-align: center;
+}
+
+.about-me {
+  	position: absolute;
+  	top: 34.22px;
+  	left: 1254.26px;
+  	font-size: 20.91px;
+  	color: #fff;
+  	text-align: center;
+}
+.about-me:hover {
+    text-decoration: underline;
+}
+
+.about-me a {
+  	color: #fff; 
+  	text-decoration: none; 
+}
+.resume {
+  	position: absolute;
+  	top: 34.22px;
+  	left: 1385.96px;
+  	font-size: 20.91px;
+  	color: #fff;
+  	text-align: center;
+}
+
+.resume:hover {
+    text-decoration: underline;
+}
+	
+
+.resume a {
+  	color: #fff; 
+  	text-decoration: none; 
+}
+.eco-sync {
+  	position: absolute;
+  	top: 1332.69px;
+  	left: 809.33px;
+  	letter-spacing: -0.01em;
+  	text-align: right;
+}
+
+.eco-sync:hover {
+    text-decoration: underline;
+}
+
+.eco-sync a {
+  	color: #ffe100; 
+  	text-decoration: none; 
+}
+
+.an-app-which {
+  	position: absolute;
+  	top: 1437.23px;
+  	left: 808.89px;
+  	font-size: 31.36px;
+  	letter-spacing: -0.01em;
+  	color: #e1e1e1;
+  	white-space: pre-wrap;
+  	display: flex;
+  	align-items: center;
+  	width: 567.7px;
+}
+.home-child4 {
+  	position: absolute;
+  	top: 1407.13px;
+  	left: 808.89px;
+  	border-top: 0.9px solid #fff;
+  	box-sizing: border-box;
+  	width: 413.4px;
+  	height: 0.9px;
+}
+.b-yana {
+  	position: absolute;
+  	top: 1758.82px;
+  	left: 809.33px;
+  	letter-spacing: -0.01em;
+  	text-align: center
+}
+
+.b-yana:hover {
+    text-decoration: underline;
+}
+
+.b-yana a {
+  	color: #ffe100; 
+  	text-decoration: none;
+}
+
+.an-app-which1 {
+  	position: absolute;
+  	top: 1862.39px;
+  	left: 808.89px;
+  	font-size: 31.36px;
+  	letter-spacing: -0.01em;
+  	color: #e1e1e1;
+  	display: flex;
+  	align-items: center;
+  	width: 566.8px;
+}
+.home-child5 {
+  	position: absolute;
+  	top: 1833.25px;
+  	left: 808.46px;
+  	border-top: 0.9px solid #fff;
+  	box-sizing: border-box;
+  	width: 413.4px;
+  	height: 0.9px;
+}
+.ecosync-icon {
+  	position: absolute;
+  	top: 1207.32px;
+  	left: 0px;
+  	border-radius: 0px 174.23px 0px 0px;
+  	width: 696.4px;
+  	height: 473.8px;
+  	object-fit: cover;
+}
+
+.byana-icon {
+  	position: absolute;
+  	top: 1700.59px;
+  	left: 0px;
+  	border-radius: 0px 0px 174.23px 0px;
+  	width: 696.4px;
+  	height: 471.7px;
+  	object-fit: cover;
+}
+.four-icon {
+  	position: absolute;
+  	top: 2174.31px;
+  	left: 808.89px;
+  	border-radius: 174.23px 0px 0px 0px;
+  	width: 696.4px;
+  	height: 474.9px;
+  	object-fit: cover;
+}
+.ameya-icon {
+  	position: absolute;
+  	top: 2669.26px;
+  	left: 808.89px;
+  	border-radius: 0px 0px 0px 174.23px;
+  	width: 696.4px;
+  	height: 473.8px;
+  	object-fit: cover;
+}
+.niyati-icon {
+  	position: absolute;
+  	top: 3143.07px;
+  	left: 0px;
+  	border-radius: 0px 174.23px 0px 0px;
+  	width: 696.4px;
+  	height: 473.8px;
+  	object-fit: cover;
+}
+.swayam-icon {
+  	position: absolute;
+  	top: 3637.95px;
+  	left: 0px;
+  	border-radius: 0px 0px 174.23px 0px;
+  	width: 696.4px;
+  	height: 473.8px;
+  	object-fit: cover;
+}
+
+/* start of text to icon transition s */
+.social-link {
+  text-decoration: none;
+  color: #000;
+  font-size: 18.04px;
+  letter-spacing: -0.01em;
+  position: absolute;
+  display: inline-block;
+}
+
+.linkedin {
+  top: 4416.58px;
+  left: 886.87px;
+  color:#FFE100
+
+}
+
+.instagram {
+  top: 4416.58px;
+  left: 551.43px;
+  color:#FFE100
+}
+
+.email {
+  top: 4416.58px;
+  left: 673.15px;
+  color:#FFE100
+
+}
+
+/* Hide the logo initially */
+.social-logo {
+  width: 48px; 
+  height: 48px; 
+  opacity: 0; 
+  transition: opacity 0.3s ease; 
+  position: absolute; 
+  top: 50%;
+  left: 50%; 
+  transform: translate(-50%, -50%);
+}
+
+/* Style for the text */
+.social-text {
+  transition: opacity 0.3s ease;
+  position: relative; 
+  z-index: 1; 
+}
+
+/* Hover effect to replace text with icon */
+.social-link:hover .social-text {
+  opacity: 0; 
+}
+
+.social-link:hover .social-logo {
+  opacity: 1; 
+}
+/* this ends here */
+
+
+.get-in-contact {
+  	position: absolute;
+  	top: 4315.55px;
+  	left: 635.05px;
+  	font-size: 32.06px;
+  	letter-spacing: -0.01em;
+  	font-family: 'Brown Sugar';
+}
+.home {
+  	width: 100%;
+  	position: relative;
+  	background-color: #fff7f3;
+  	height: 4554.3px;
+  	overflow: hidden;
+  	text-align: left;
+  	font-size: 41.81px;
+  	color: #ffe100;
+  	font-family: Avenir;
+}
+
+
+	</style>
+  	
+</head>
+<body>
+  	
+	<div class="home">
+		<div class="home-child">
+		</div>
+		<div class="uiux-designer">UIUX Designer</div>
+		<div class="lorem-ipsum-wrapper"> <a href="#scrollhere">
+			  <div class="lorem-ipsum">Check out my work</div>
+			</a>
+	</div>
+		
+		<div class="home-inner">
+		</div>
+	<div class="home-item">
+		</div>
+		<div class="sriyakshi-sinha">sriyakshi sinha</div>
+		<div class="design-projects" id ="scrollhere">Design Projects</div>
+		<div class="four-squares"><a href="4FourSqaures.html" >4 Four Squares</a></div>
+		<div class="a-website-for">A website for the clothing e-commerce company</div>
+		<div class="line-div">
+		</div>
+		<div class="ameya-engineering-solutions"><a href="ameya.html" >Ameya Engineering Solutions</a></div>
+		<div class="a-website-for1">A website for a biotechnology startup</div>
+		<div class="home-child1">
+		</div>
+		<div class="niyati"><a href="niyati.html" >Niyati</a></div>
+		<div class="a-service-catered">A service catered to people with skincare issues in India</div>
+		<div class="home-child2">
+		</div>
+		<div class="swayam"><a href="swayam.html" >Swayam</a></div>
+		<div class="redesign-of-swayam-">Redesign of  Swayam- A government owned E-Learning Platform</div>
+		<div class="home-child3">
+		</div>
+		<a href = "#scrollhere"><img class="vuesaxoutlinearrow-down-icon floating-icon" alt="arrow" src="arrow-down.svg"> </a>
+		
+		<div class="home1" style="position:fixed">Home</div>
+		<div class="about-me" style="position:fixed"> <a href="about-me.html" >About Me</a></div>
+		<div class="resume" style="position:fixed"><a href="resume.html"> Resume</a></div>
+	<img class="s-logo-01-1" alt="logo" src="s logo-01 1.png" style="position:fixed">
+		<div class="eco-sync"><a href="ecosync.html" >Eco Sync</a></div>
+		<div class="an-app-which">An app which tracks user’s  carbon footprint and informs them how to reduce it</div>
+		<div class="home-child4">
+		</div>
+		<div class="b-yana"><a href="byana.html" >BYana</a></div>
+		<div class="an-app-which1">An app which allows users to book BMTC Tickets </div>
+		<div class="home-child5">
+		</div>
+		<img class="ecosync-icon w3-hover-grayscale"  alt="ecosync" src="ecosync.png">
+		
+		<img class="byana-icon w3-hover-grayscale" alt="byana" src="byana.png">
+		
+		<img class="four-icon w3-hover-grayscale" alt="4four" src="4four.png">
+		
+		<img class="ameya-icon w3-hover-grayscale" alt="ameya" src="ameya.png">
+		
+		<img class="niyati-icon w3-hover-grayscale" alt="niyati" src="niyati.png">
+		
+		<img class="swayam-icon w3-hover-grayscale" alt="swayam" src="swayam.png">
+		
+		 <a href="https://www.linkedin.com/in/sriyakshi-sinha-43b45b28b/" target="_blank" class="social-link linkedin">
+			<span class="social-text">LinkedIn</span>
+			<img src="linkedin.svg" alt="LinkedIn Logo" class="social-logo">
+		  </a>
+		
+		  <a href="https://www.instagram.com/sriyakshii/?hl=en" target="_blank" class="social-link instagram">
+			<span class="social-text">Instagram</span>
+			<img src="instagram.svg" alt="Instagram Logo" class="social-logo">
+		  </a>
+		
+		  <a href="mailto:sriyakshisgmailcom" class="social-link email">
+			<span class="social-text">sriyakshisgmailcom</span>
+			<img src="email.svg" alt="Email Icon" class="social-logo">
+		  </a>
+		
+		<div class="get-in-contact">Get In Contact</div>
+	
+  </div>
+  
+  
+</body>
+</html>

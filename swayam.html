@@ -1,0 +1,458 @@
+<!DOCTYPE html>
+<html>
+<head>
+  	<meta charset="utf-8">
+  	<meta name="viewport" content="initial-scale=1, width=device-width">
+  	
+  	<link rel="stylesheet"  href="./index.css" />
+  	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Avenir:wght@400&display=swap" />
+  	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Brown Sugar:wght@400&display=swap" />
+	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
+  	
+	  <script>
+		// JavaScript for the progress bar
+window.onscroll = function() {scrollProgress()};
+
+function scrollProgress() {
+    var winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+    var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+    var scrolled = (winScroll / height) * 100;
+    document.getElementById("progressBar").style.width = scrolled + "%";
+}
+
+	</script>
+
+  	<style>
+
+/* fade in text style */
+.fade-in-text {
+      opacity: 0;
+      animation: fadeIn 2s ease-in-out forwards;
+    }
+
+    @keyframes fadeIn {
+      0% {
+        opacity: 0;
+      }
+      100% {
+        opacity: 1;
+      }
+	}
+
+		/* Style for progress bar */
+#progressBar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 0%;
+    height: 10px;
+    background-color: #142D47; /* Green color */
+    z-index: 100; /* Stay on top of the page */
+}
+
+/* Example content */
+.content {
+    height: 2000px; /* Large height to allow scrolling */
+    padding: 20px;
+    font-size: 18px;
+}
+
+        .swayam-icon {
+  	position: absolute;
+  	top: 131.44px;
+  	left: 69px;
+  	width: 1363.5px;
+  	height: 771.7px;
+  	object-fit: cover;
+}
+.swayam-child {
+  	position: absolute;
+  	top: 958.96px;
+  	left: 69px;
+  	background-color: #ffe7e9;
+  	width: 1363.5px;
+  	height: 851.2px;
+}
+.home {
+  	position: absolute;
+  	top: 46.91px;
+  	left: 1148.41px;
+  	font-size: 20.91px;
+  	color: #ffe100;
+  	text-align: center;
+}
+
+.home a {
+  	color: #fff;
+  	text-decoration: none; 
+}
+
+.about-me {
+  	position: absolute;
+  	top: 46.91px;
+  	left: 1241.79px;
+  	font-size: 20.91px;
+  	color: #ffe100;
+  	text-align: center;
+}
+
+.about-me:hover {
+    text-decoration: underline;
+}
+
+.about-me a {
+  	color: #ffe100;
+  	text-decoration: none; 
+}
+
+.resume {
+  	position: absolute;
+  	top: 46.91px;
+  	left: 1373.5px;
+  	font-size: 20.91px;
+  	color: #ffe100;
+  	text-align: center;
+}
+
+.resume:hover {
+    text-decoration: underline;
+}
+.resume a {
+  	color: #ffe100;
+  	text-decoration: none; 
+}
+
+.swayam1 {
+  	position: absolute;
+  	top: 369.05px;
+  	left: 206.89px;
+  	font-size: 111.5px;
+  	letter-spacing: -0.01em;
+  	line-height: 119%;
+  	font-family: 'Brown Sugar';
+  	text-align: center;
+  	display: flex;
+  	align-items: center;
+  	justify-content: center;
+  	width: 1091.5px;
+  	height: 228.6px;
+}
+.product-description {
+  	position: absolute;
+  	top: 978.25px;
+  	left: 119.49px;
+  	letter-spacing: -0.01em;
+  	font-family: 'Brown Sugar';
+  	display: flex;
+  	align-items: center;
+  	width: 615.8px;
+  	height: 127.2px;
+}
+.redesign-of-swayam- {
+  	position: absolute;
+  	top: 529.67px;
+  	left: 340.39px;
+  	font-size: 31.36px;
+  	letter-spacing: -0.01em;
+  	white-space: pre-wrap;
+  	text-align: center;
+  	display: flex;
+  	align-items: center;
+  	justify-content: center;
+  	width: 824.5px;
+  	height: 135.9px;
+}
+.swayam-item {
+  	position: absolute;
+  	top: 1036.61px;
+  	left: 708.08px;
+  	background-color: #fb453a;
+  	border-top: 10.5px solid #fb453a;
+  	box-sizing: border-box;
+  	width: 89.2px;
+  	height: 10.5px;
+}
+.after-conducting-an {
+  	margin: 0;
+}
+.after-conducting-an-container {
+  	position: absolute;
+  	top: 1126.69px;
+  	left: 160.37px;
+  	font-size: 27.88px;
+  	color: #121212;
+  	display: inline-block;
+  	width: 1149.9px;
+  	height: 597.6px;
+}
+.rectangle-div {
+  	position: absolute;
+  	top: 1865.91px;
+  	left: 69px;
+  	background-color: #ffe7e9;
+  	width: 1363.5px;
+  	height: 2281.6px;
+}
+.home-page {
+  	position: absolute;
+  	top: 1876.36px;
+  	left: 97.5px;
+  	letter-spacing: -0.01em;
+  	font-family: 'Brown Sugar';
+  	white-space: pre-wrap;
+  	display: flex;
+  	align-items: center;
+  	width: 409.8px;
+  	height: 127.2px;
+}
+.swayam-child1 {
+  	position: absolute;
+  	top: 4203.34px;
+  	left: 69px;
+  	background-color: #ffe7e9;
+  	width: 1363.5px;
+  	height: 1310.2px;
+}
+.course-catalogue-page {
+  	position: absolute;
+  	top: 4213.79px;
+  	left: 97.5px;
+  	letter-spacing: -0.01em;
+  	font-family: 'Brown Sugar';
+  	display: flex;
+  	align-items: center;
+  	width: 653px;
+  	height: 127.2px;
+}
+.swayam-child2 {
+  	position: absolute;
+  	top: 5569.29px;
+  	left: 69px;
+  	background-color: #ffe7e9;
+  	width: 1363.5px;
+  	height: 1565.3px;
+}
+.course-information-page {
+  	position: absolute;
+  	top: 5579.73px;
+  	left: 97.5px;
+  	letter-spacing: -0.01em;
+  	font-family: 'Brown Sugar';
+  	display: flex;
+  	align-items: center;
+  	width: 736.3px;
+  	height: 127.2px;
+}
+.swayam-child3 {
+  	position: absolute;
+  	top: 7190.36px;
+  	left: 68.76px;
+  	background-color: #ffe7e9;
+  	width: 1363.5px;
+  	height: 979.2px;
+}
+.exam-registration-page {
+  	position: absolute;
+  	top: 7200.8px;
+  	left: 97.26px;
+  	letter-spacing: -0.01em;
+  	font-family: 'Brown Sugar';
+  	white-space: pre-wrap;
+  	display: flex;
+  	align-items: center;
+  	width: 745.7px;
+  	height: 127.2px;
+}
+.image-69-icon {
+  	position: absolute;
+  	top: 1983.69px;
+  	left: 130.89px;
+  	width: 1243.5px;
+  	height: 2111.5px;
+  	object-fit: cover;
+}
+.image-70-icon {
+  	position: absolute;
+  	top: 4340.98px;
+  	left: 130.89px;
+  	width: 1243.5px;
+  	height: 1123.6px;
+  	object-fit: cover;
+}
+.image-71-icon {
+  	position: absolute;
+  	top: 5706.92px;
+  	left: 130.89px;
+  	width: 1243.5px;
+  	height: 1360.3px;
+  	object-fit: cover;
+}
+.image-72-icon {
+  	position: absolute;
+  	top: 7327.99px;
+  	left: 130.89px;
+  	width: 1243.5px;
+  	height: 779.3px;
+  	object-fit: cover;
+}
+
+.social-link {
+  text-decoration: none;
+  color: #000;
+  font-size: 18.04px;
+  letter-spacing: -0.01em;
+  position: absolute;
+  display: inline-block;
+}
+
+.linkedin {
+	top: 8298.38px;
+    left: 891.31px;
+  color:#ffe100
+
+}
+
+.instagram {
+	top: 8298.38px;
+    left: 555.87px;
+  color:#ffe100
+}
+
+.email {
+	top: 8298.38px;
+    left: 677.59px;
+  color:#ffe100
+
+}
+
+.social-logo {
+  width: 48px; 
+  height: 48px; 
+  opacity: 0; 
+  transition: opacity 0.3s ease; 
+  position: absolute;
+  top: 50%; 
+  left: 50%; 
+  transform: translate(-50%, -50%); 
+}
+
+.social-text {
+  transition: opacity 0.3s ease;
+  position: relative; 
+  z-index: 1; 
+}
+
+.social-link:hover .social-text {
+  opacity: 0; 
+}
+
+.social-link:hover .social-logo {
+  opacity: 1; 
+}
+
+.get-in-contact {
+  	position: absolute;
+  	top: 8214.53px;
+  	left: 635.05px;
+  	font-size: 32.06px;
+  	letter-spacing: -0.01em;
+  	font-family: 'Brown Sugar';
+  	color: #ffe100;
+}
+.s-logo-01-5 {
+  	position: absolute;
+  	top: 25.92px;
+  	left: 20.24px;
+  	width: 48.8px;
+  	height: 70.7px;
+  	object-fit: cover;
+}
+.swayam {
+  	width: 100%;
+  	position: relative;
+  	background-color: #fb453a;
+  	height: 8443.8px;
+  	overflow: hidden;
+  	text-align: left;
+  	font-size: 55.75px;
+  	color: #fb453a;
+  	font-family: Avenir;
+}
+
+
+    </style>
+  	
+</head>
+<body>
+  	
+<div id="progressBar"></div>
+
+  	<div class="swayam">
+    		<img class="swayam-icon w3-opacity w3-hover-opacity-off" alt="" src="swayamcover.png">
+    		
+    		<div class="swayam-child">
+    		</div>
+    		<div class="home"><a href="index.html"> Home</a></div>
+			<div class="about-me"><a href="about-me.html"> About Me</a></div>
+			<div class="resume"><a href="resume.html" >Resume</a></div>
+    		<div class="swayam1 fade-in-text">swayam</div>
+    		<div class="product-description">Product Description</div>
+    		<div class="redesign-of-swayam- fade-in-text">Redesign of  Swayam- A government owned E-Learning Platform</div>
+    		<div class="swayam-item">
+    		</div>
+    		<div class="product-description">Product Description</div>
+    		<div class="swayam-item">
+    		</div>
+    		<div class="after-conducting-an-container">
+      			<p class="after-conducting-an">After conducting an intensive usability test, I embarked on redesigning the "Swayam" website to address the shortcomings identified during the evaluation. The primary goal was to enhance the overall user experience, ensuring that users could navigate the site effortlessly and find the information they needed without frustration.</p>
+      			<p class="after-conducting-an">&nbsp;</p>
+      			<p class="after-conducting-an">Accessibility was a key consideration in the redesign, allowing the website to cater to a wider audience, including those with disabilities. By incorporating best practices for accessibility, I aimed to create a welcoming environment for every user, ensuring that everyone could engage with the content fully.</p>
+      			<p class="after-conducting-an">&nbsp;</p>
+      			<p class="after-conducting-an">To align the site with contemporary web standards and trends, I modernized the design while retaining a familiar brand identity. By blending modern design elements with user-centric features, the redesigned "Swayam" website stands as a testament to a thoughtful approach to user experience, accessibility, and contemporary aesthetics.</p>
+    		</div>
+    		<div class="rectangle-div">
+    		</div>
+    		<div class="home-page">home  page</div>
+    		<div class="swayam-child1">
+    		</div>
+    		<div class="course-catalogue-page">course catalogue page</div>
+    		<div class="swayam-child2">
+    		</div>
+    		<div class="course-information-page">course information page</div>
+    		<div class="swayam-child3">
+    		</div>
+    		<div class="exam-registration-page">exam  registration  page</div>
+    		<img class="image-69-icon" alt="" src="swayam1.png">
+    		
+    		<img class="image-70-icon" alt="" src="swayam2.png">
+    		
+    		<img class="image-71-icon" alt="" src="swayam3.png">
+    		
+    		<img class="image-72-icon" alt="" src="swayam4.png">
+    		
+		<a href="https://www.linkedin.com/in/sriyakshi-sinha-43b45b28b/" target="_blank" class="social-link linkedin">
+			<span class="social-text">LinkedIn</span>
+			<img src="linkedin.svg" alt="LinkedIn Logo" class="social-logo">
+		  </a>
+		
+		  <a href="https://www.instagram.com/sriyakshii/?hl=en" target="_blank" class="social-link instagram">
+			<span class="social-text">Instagram</span>
+			<img src="instagram.svg" alt="Instagram Logo" class="social-logo">
+		  </a>
+		
+		  <a href="mailto:sriyakshisgmailcom" class="social-link email">
+			<span class="social-text">sriyakshisgmailcom</span>
+			<img src="email.svg" alt="Email Icon" class="social-logo">
+		  </a>
+		  
+		    <div class="get-in-contact">Get In Contact</div>
+    		<img class="s-logo-01-5" alt="" src="s logo-01 5swayam.png">
+    		
+  	</div>
+  	
+  	
+  	
+  	
+</body>
+</html>

@@ -1,0 +1,597 @@
+<!DOCTYPE html>
+<html>
+<head>
+  	<meta charset="utf-8">
+  	<meta name="viewport" content="initial-scale=1, width=device-width">
+  	
+  	<link rel="stylesheet"  href="./index.css" />
+  	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Avenir:wght@400&display=swap" />
+  	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Brown Sugar:wght@400&display=swap" />
+	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
+	<script>
+window.onscroll = function() {scrollProgress()};
+
+function scrollProgress() {
+    var winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+    var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+    var scrolled = (winScroll / height) * 100;
+    document.getElementById("progressBar").style.width = scrolled + "%";
+}
+
+	</script>
+
+  	<style>
+
+.fade-in-text {
+      opacity: 0;
+      animation: fadeIn 2s ease-in-out forwards;
+    }
+
+    @keyframes fadeIn {
+      0% {
+        opacity: 0;
+      }
+      100% {
+        opacity: 1;
+      }
+	}
+
+#progressBar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 0%;
+    height: 10px;
+    background-color: #142D47; 
+    z-index: 100; 
+}
+
+        .niyati-icon {
+  	position: absolute;
+  	top: 131.44px;
+  	left: 69px;
+  	width: 1363.5px;
+  	height: 767.7px;
+  	object-fit: cover;
+}
+.niyati-child {
+  	position: absolute;
+  	top: 958.96px;
+  	left: 69px;
+  	background-color: #ffe7e9;
+  	width: 1363.5px;
+  	height: 1552px;
+}
+.home {
+  	position: absolute;
+  	top: 46.91px;
+  	left: 1148.41px;
+  	font-size: 20.91px;
+  	font-family: Avenir;
+  	color: #ffe100;
+  	text-align: center;
+}
+
+.home a {
+  	color: #fff;   
+  	text-decoration: none; /
+}
+
+.about-me {
+  	position: absolute;
+  	top: 46.91px;
+  	left: 1241.79px;
+  	font-size: 20.91px;
+  	font-family: Avenir;
+  	color: #ffe100;
+  	text-align: center;
+}
+
+.about-me:hover {
+    text-decoration: underline;
+}
+
+.about-me a {
+  	color: #ffe100;   
+  	text-decoration: none; /
+}
+
+.resume {
+  	position: absolute;
+  	top: 46.91px;
+  	left: 1373.5px;
+  	font-size: 20.91px;
+  	font-family: Avenir;
+  	color: #ffe100;
+  	text-align: center;
+}
+.resume:hover {
+    text-decoration: underline;
+}
+
+.resume a {
+  	color: #ffe100;   
+  	text-decoration: none; /
+}
+
+.niayti {
+  	position: absolute;
+  	top: 369.05px;
+  	left: 206.89px;
+  	font-size: 111.5px;
+  	letter-spacing: -0.01em;
+  	line-height: 119%;
+  	text-align: center;
+  	display: flex;
+  	align-items: center;
+  	justify-content: center;
+  	width: 1091.5px;
+  	height: 228.6px;
+}
+.product-description {
+  	position: absolute;
+  	top: 978.25px;
+  	left: 119.49px;
+  	letter-spacing: -0.01em;
+  	display: flex;
+  	align-items: center;
+  	width: 615.8px;
+  	height: 127.2px;
+}
+.niyati-item {
+  	position: absolute;
+  	top: 1036.61px;
+  	left: 708.08px;
+  	background-color: #fb453a;
+  	border-top: 10.5px solid #fb453a;
+  	box-sizing: border-box;
+  	width: 89.2px;
+  	height: 10.5px;
+}
+.niyati-is-a {
+  	margin: 0;
+}
+.niyati-is-a-container {
+  	position: absolute;
+  	top: 1126.69px;
+  	left: 160.37px;
+  	font-size: 27.88px;
+  	font-family: Avenir;
+  	color: #121212;
+  	display: inline-block;
+  	width: 1149.9px;
+  	height: 1384.3px;
+}
+.rectangle-div {
+  	position: absolute;
+  	top: 2566.74px;
+  	left: 69px;
+  	background-color: #ffe7e9;
+  	width: 1363.5px;
+  	height: 851.2px;
+}
+.image-110-icon {
+  	position: absolute;
+  	top: 2690.08px;
+  	left: 113.47px;
+  	width: 806.9px;
+  	height: 678.6px;
+  	object-fit: cover;
+}
+.branding {
+  	position: absolute;
+  	top: 2586.03px;
+  	left: 113.47px;
+  	letter-spacing: -0.01em;
+  	display: flex;
+  	align-items: center;
+  	width: 324.3px;
+  	height: 127.2px;
+}
+.niyati-child1 {
+  	position: absolute;
+  	top: 3473.69px;
+  	left: 69px;
+  	background-color: #ffe7e9;
+  	width: 1363.5px;
+  	height: 851.2px;
+}
+.product-packaging {
+  	position: absolute;
+  	top: 3492.97px;
+  	left: 113.47px;
+  	letter-spacing: -0.01em;
+  	display: flex;
+  	align-items: center;
+  	width: 541.6px;
+  	height: 127.2px;
+}
+.a-service-catered {
+  	position: absolute;
+  	top: 541.13px;
+  	left: 352.64px;
+  	font-size: 31.36px;
+  	letter-spacing: -0.01em;
+  	font-family: Avenir;
+  	text-align: center;
+  	display: flex;
+  	align-items: center;
+  	justify-content: center;
+  	width: 824.5px;
+  	height: 135.9px;
+}
+.whatsapp-image-2024-09-13-at-2 {
+  	position: absolute;
+  	top: 3639.21px;
+  	left: 93.97px;
+  	width: 1317.4px;
+  	height: 591.8px;
+  	object-fit: cover;
+}
+.niyati-child2 {
+  	position: absolute;
+  	top: 4380.64px;
+  	left: 69px;
+  	background-color: #ffe7e9;
+  	width: 1363.5px;
+  	height: 851.2px;
+}
+.product-information-and {
+  	position: absolute;
+  	top: 4399.92px;
+  	left: 113.47px;
+  	letter-spacing: -0.01em;
+  	display: flex;
+  	align-items: center;
+  	width: 668.6px;
+  	height: 127.2px;
+}
+.niyati-child3 {
+  	position: absolute;
+  	top: 5287.58px;
+  	left: 69px;
+  	background-color: #ffe7e9;
+  	width: 1363.5px;
+  	height: 851.2px;
+}
+.kiosk {
+  	position: absolute;
+  	top: 5306.87px;
+  	left: 113.47px;
+  	letter-spacing: -0.01em;
+  	display: flex;
+  	align-items: center;
+  	width: 668.6px;
+  	height: 127.2px;
+}
+.niyati-child4 {
+  	position: absolute;
+  	top: 6194.52px;
+  	left: 69px;
+  	background-color: #ffe7e9;
+  	width: 1363.5px;
+  	height: 851.2px;
+}
+.kiosk-screen {
+  	position: absolute;
+  	top: 6213.81px;
+  	left: 113.47px;
+  	letter-spacing: -0.01em;
+  	display: flex;
+  	align-items: center;
+  	width: 668.6px;
+  	height: 127.2px;
+}
+.niyati-child5 {
+  	position: absolute;
+  	top: 7101.47px;
+  	left: 69px;
+  	background-color: #ffe7e9;
+  	width: 1363.5px;
+  	height: 922.1px;
+}
+.website-screens-landing {
+  	position: absolute;
+  	top: 7120.76px;
+  	left: 113.47px;
+  	letter-spacing: -0.01em;
+  	display: flex;
+  	align-items: center;
+  	width: 901.4px;
+  	height: 127.2px;
+}
+.product-information-and1 {
+  	position: absolute;
+  	top: 9841.6px;
+  	left: 118.83px;
+  	letter-spacing: -0.01em;
+  	display: flex;
+  	align-items: center;
+  	width: 668.6px;
+  	height: 127.2px;
+}
+.dfbdfb-1-icon {
+  	position: absolute;
+  	top: 5434.05px;
+  	left: 172.79px;
+  	width: 1156px;
+  	height: 650.2px;
+  	object-fit: cover;
+}
+.image-112-icon {
+  	position: absolute;
+  	top: 6341px;
+  	left: 162.4px;
+  	width: 1187.5px;
+  	height: 662.6px;
+  	object-fit: cover;
+}
+.image-140-icon {
+  	position: absolute;
+  	top: 7247.94px;
+  	left: 126.63px;
+  	width: 1248.3px;
+  	height: 733.2px;
+  	object-fit: cover;
+}
+.niyati-child6 {
+  	position: absolute;
+  	top: 8079.38px;
+  	left: 69px;
+  	background-color: #ffe7e9;
+  	width: 1363.5px;
+  	height: 922.1px;
+}
+.website-screens-catalogue {
+  	position: absolute;
+  	top: 8098.67px;
+  	left: 113.47px;
+  	letter-spacing: -0.01em;
+  	display: flex;
+  	align-items: center;
+  	width: 1051px;
+  	height: 127.2px;
+}
+.image-141-icon {
+  	position: absolute;
+  	top: 8225.85px;
+  	left: 126.63px;
+  	width: 1248.3px;
+  	height: 732.8px;
+  	object-fit: cover;
+}
+.niyati-child7 {
+  	position: absolute;
+  	top: 9057.29px;
+  	left: 69px;
+  	background-color: #ffe7e9;
+  	width: 1363.5px;
+  	height: 4419px;
+}
+.website-screens-catalogue1 {
+  	position: absolute;
+  	top: 9076.58px;
+  	left: 113.47px;
+  	letter-spacing: -0.01em;
+  	display: flex;
+  	align-items: center;
+  	width: 1051px;
+  	height: 127.2px;
+}
+.image-142-icon {
+  	position: absolute;
+  	top: 9203.77px;
+  	left: 126.63px;
+  	width: 1248.3px;
+  	height: 4190.9px;
+  	object-fit: cover;
+}
+.fe4b5671-9522-48c3-ab21-46acbc-icon {
+  	position: absolute;
+  	top: 4598.01px;
+  	left: 0px;
+  	width: 1033.9px;
+  	height: 468.2px;
+  	object-fit: contain;
+}
+
+.social-link {
+  text-decoration: none;
+  color: #000;
+  font-size: 18.04px;
+  letter-spacing: -0.01em;
+  position: absolute;
+  display: inline-block;
+}
+
+.linkedin {
+	top: 13650.33px;
+    left: 884.99px;
+	font-family: Avenir;
+  color:#ffe100
+
+}
+
+.instagram {
+	top: 13650.33px;
+    left: 549.55px;
+	font-family: Avenir;
+  color:#ffe100
+}
+
+.email {
+	top: 13650.33px;
+    left: 671.27px;
+	font-family: Avenir;
+  color:#ffe100
+
+}
+
+.social-logo {
+  width: 48px; 
+  height: 48px; 
+  opacity: 0; 
+  transition: opacity 0.3s ease; 
+  position: absolute; 
+  top: 50%; 
+  left: 50%; 
+  transform: translate(-50%, -50%);
+}
+
+.social-text {
+  transition: opacity 0.3s ease;
+  position: relative;
+  z-index: 1; 
+}
+
+.social-link:hover .social-text {
+  opacity: 0; 
+}
+
+.social-link:hover .social-logo {
+  opacity: 1; 
+}
+
+.get-in-contact {
+  	position: absolute;
+  	top: 13541.25px;
+  	left: 635.05px;
+  	font-size: 32.06px;
+  	letter-spacing: -0.01em;
+  	color: #ffe100;
+}
+.s-logo-01-4 {
+  	position: absolute;
+  	top: 25.92px;
+  	left: 20.24px;
+  	width: 48.8px;
+  	height: 70.7px;
+  	object-fit: cover;
+}
+.image-143-icon {
+  	position: absolute;
+  	top: 4449.92px;
+  	left: 851.22px;
+  	width: 518.5px;
+  	height: 733.5px;
+  	object-fit: cover;
+}
+.niyati {
+  	width: 100%;
+  	position: relative;
+  	background-color: #fb453a;
+  	height: 13802.2px;
+  	overflow: hidden;
+  	text-align: left;
+  	font-size: 55.75px;
+  	color: #fb453a;
+  	font-family: 'Brown Sugar';
+}
+
+
+    </style>
+  	
+</head>
+<body>
+
+<div id="progressBar"></div>
+
+  	
+  	<div class="niyati">
+    		<img class="niyati-icon w3-opacity w3-hover-opacity-off" alt="" src="niyaticover.png">
+    		
+    		<div class="niyati-child">
+    		</div>
+    		<div class="home"><a href="index.html"> Home</a></div>
+			<div class="about-me"><a href="about-me.html"> About Me</a></div>
+			<div class="resume"><a href="resume.html" >Resume</a></div>
+    		<div class="niayti fade-in-text">niayti</div>
+    		<div class="product-description">Product Description</div>
+    		<div class="niyati-item">
+    		</div>
+    		<div class="product-description">Product Description</div>
+    		<div class="niyati-item">
+    		</div>
+    		<div class="niyati-is-a-container">
+      			<p class="niyati-is-a">"Niyati" is a service design I worked on, focusing on a critical issue in the skincare industry—misleading advertising and a lack of transparency about product usage. Many consumers seeking better skincare products often fall victim to unclear marketing, resulting in adverse skin reactions and long-term health risks. We aimed to address this issue by providing clarity and personalized guidance to skincare users.</p>
+      			<p class="niyati-is-a">&nbsp;</p>
+      			<p class="niyati-is-a">The core idea behind "Niyati" is to bridge the gap between brands and consumers. Unlike many services that add to the overwhelming number of skincare products on the market, we do not sell our own products. Instead, we recommend existing products that best suit individual user needs. By removing the trial-and-error process, "Niyati" helps users make informed decisions, striving to eliminate the guesswork from skincare.</p>
+      			<p class="niyati-is-a">&nbsp;</p>
+      			<p class="niyati-is-a">One of the key components of "Niyati" is our in-store clinic, where users can receive personalized consultations. The clinic offers a full facial analysis to determine the best products for each user's skin. After the consultation, users are provided with a kit containing the recommended products along with a detailed PDF analysis and a zine that explains how to use the products effectively.</p>
+      			<p class="niyati-is-a">&nbsp;</p>
+      			<p class="niyati-is-a">For users who prefer online access, "Niyati" also offers a website. The site allows users to explore product recommendations based on their specific skin concerns. In addition to offering advice, the website includes a comparison tool that lets users compare the ingredients of two products. This helps users assess whether the products work well together or could cause any harmful reactions.</p>
+      			<p class="niyati-is-a">&nbsp;</p>
+      			<p class="niyati-is-a">The comparison tool is a key feature of "Niyati," empowering users to take control of their skincare routine. By comparing product ingredients, users can ensure that they are making safe and informed choices. This transparency fosters trust, enabling users to feel confident in the products they are using.</p>
+      			<p class="niyati-is-a">&nbsp;</p>
+    		</div>
+    		<div class="rectangle-div">
+    		</div>
+    		<img class="image-110-icon" alt="" src="niyati3.png">
+    		
+    		<div class="branding">Branding</div> 
+    		<div class="niyati-child1"> 
+    		</div> 
+    		<div class="product-packaging">PRODUCT PACKAGING</div>
+    		<div class="a-service-catered fade-in-text">A service catered to people with skincare issues in India</div>
+    		<img class="whatsapp-image-2024-09-13-at-2" alt="" src="niyati9.png">
+    		
+    		<div class="niyati-child2">
+    		</div>
+    		<div class="product-information-and">PRODUCT INFORMATION AND ANALYSIS</div>
+    		<div class="niyati-child3">
+    		</div>
+    		<div class="kiosk">kiosk </div>
+    		<div class="niyati-child4">
+    		</div>
+    		<div class="kiosk-screen">kiosk screen</div>
+    		<div class="niyati-child5">
+    		</div>
+    		<div class="website-screens-landing">website screens- landing page</div>
+    		<div class="product-information-and1">PRODUCT INFORMATION AND ANALYSIS</div>
+    		<img class="dfbdfb-1-icon" alt="" src="niyati1.png">
+    		
+    		<img class="image-112-icon" alt="" src="niyati4.png">
+    		
+    		<img class="image-140-icon" alt="" src="niyati5.png">
+    		
+    		<div class="niyati-child6">
+    		</div>
+    		<div class="website-screens-catalogue">website screens- catalogue page</div>
+    		<img class="image-141-icon" alt="" src="niyati6.png">
+    		
+    		<div class="niyati-child7">
+    		</div>
+    		<div class="website-screens-catalogue1">website screens- catalogue page</div>
+    		<img class="image-142-icon" alt="" src="niyati7.png">
+    		
+    		<img class="fe4b5671-9522-48c3-ab21-46acbc-icon" alt="" src="niyati2.png">
+    		
+		<a href="https://www.linkedin.com/in/sriyakshi-sinha-43b45b28b/" target="_blank" class="social-link linkedin">
+			<span class="social-text">LinkedIn</span>
+			<img src="linkedin.svg" alt="LinkedIn Logo" class="social-logo">
+		  </a>
+		
+		  <a href="https://www.instagram.com/sriyakshii/?hl=en" target="_blank" class="social-link instagram">
+			<span class="social-text">Instagram</span>
+			<img src="instagram.svg" alt="Instagram Logo" class="social-logo">
+		  </a>
+		
+		  <a href="mailto:sriyakshisgmailcom" class="social-link email">
+			<span class="social-text">sriyakshisgmailcom</span>
+			<img src="email.svg" alt="Email Icon" class="social-logo">
+		  </a>
+		  
+		    <div class="get-in-contact">Get In Contact</div>
+    		<img class="s-logo-01-4" alt="" src="s logo-01 4.png">
+    		
+    		<img class="image-143-icon" alt="" src="niyati8.png">
+    	
+			
+  	</div>
+  	
+  	
+  	
+  	
+</body>
+</html>

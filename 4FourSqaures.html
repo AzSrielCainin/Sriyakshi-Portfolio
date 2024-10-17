@@ -1,0 +1,472 @@
+<!DOCTYPE html>
+<html>
+<head>
+  	<meta charset="utf-8">
+  	<meta name="viewport" content="initial-scale=1, width=device-width">
+  	
+  	<link rel="stylesheet"  href="./index.css" />
+  	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Avenir:wght@400&display=swap" />
+  	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Brown Sugar:wght@400&display=swap" />
+	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
+	<script>
+window.onscroll = function() {scrollProgress()};
+
+function scrollProgress() {
+    var winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+    var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+    var scrolled = (winScroll / height) * 100;
+    document.getElementById("progressBar").style.width = scrolled + "%";
+}
+
+	</script>
+
+  	<style>
+
+.fade-in-text {
+      opacity: 0;
+      animation: fadeIn 2s ease-in-out forwards;
+    }
+
+    @keyframes fadeIn {
+      0% {
+        opacity: 0;
+      }
+      100% {
+        opacity: 1;
+      }
+	}
+
+#progressBar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 0%;
+    height: 10px;
+    background-color: #FB453A; 
+    z-index: 100; 
+}
+
+        .four-icon {
+  	position: absolute;
+  	top: 131.44px;
+  	left: 72.63px;
+  	width: 1359.9px;
+  	height: 771.7px;
+  	object-fit: cover;
+}
+.foursqaures-child {
+  	position: absolute;
+  	top: 958.96px;
+  	left: 69px;
+  	background-color: #ffffe5;
+  	width: 1363.5px;
+  	height: 851.2px;
+}
+.foursqaures-item {
+  	position: absolute;
+  	top: 1871.19px;
+  	left: 64.4px;
+  	background-color: #ffffe5;
+  	width: 1363.5px;
+  	height: 3804.6px;
+}
+.foursqaures-inner {
+  	position: absolute;
+  	top: 5745.44px;
+  	left: 70.88px;
+  	background-color: #ffffe5;
+  	width: 1363.5px;
+  	height: 5308.1px;
+}
+.rectangle-div {
+  	position: absolute;
+  	top: 11147.87px;
+  	left: 70.88px;
+  	background-color: #ffffe5;
+  	width: 1363.5px;
+  	height: 3346.5px;
+}
+.foursqaures-child1 {
+  	position: absolute;
+  	top: 14590.4px;
+  	left: 70.88px;
+  	background-color: #ffffe5;
+  	width: 1363.5px;
+  	height: 2515.4px;
+}
+.foursqaures-child2 {
+  	position: absolute;
+  	top: 17187.16px;
+  	left: 70.88px;
+  	background-color: #ffffe5;
+  	width: 1363.5px;
+  	height: 4069.8px;
+}
+.home {
+  	position: absolute;
+  	top: 46.9px;
+  	left: 1148.41px;
+  	font-size: 20.91px;
+  	color: #142d47;
+  	text-align: center;
+}
+
+.home a {
+  	color: #fff;   
+  	text-decoration: none;   
+}
+
+.about-me {
+  	position: absolute;
+  	top: 46.9px;
+  	left: 1241.79px;
+  	font-size: 20.91px;
+  	color: #142d47;
+  	text-align: center;
+}
+
+.about-me:hover {
+    text-decoration: underline;
+}
+
+.about-me a {
+  	color: #142D47;   
+  	text-decoration: none;   
+}
+
+.resume {
+  	position: absolute;
+  	top: 46.9px;
+  	left: 1373.5px;
+  	font-size: 20.91px;
+  	color: #142d47;
+  	text-align: center;
+}
+
+.resume:hover {
+    text-decoration: underline;
+}
+.resume a {
+  	color: #142D47;   
+  	text-decoration: none;   
+}
+
+.four-squares {
+  	position: absolute;
+  	top: 370.41px;
+  	left: 206.89px;
+  	font-size: 111.5px;
+  	letter-spacing: -0.01em;
+  	font-family: 'Brown Sugar';
+  	white-space: pre-wrap;
+  	text-align: center;
+  	display: flex;
+  	align-items: center;
+  	justify-content: center;
+  	width: 1091.5px;
+  	height: 127.2px;
+}
+.product-description {
+  	position: absolute;
+  	top: 978.25px;
+  	left: 119.49px;
+  	letter-spacing: -0.01em;
+  	font-family: 'Brown Sugar';
+  	display: flex;
+  	align-items: center;
+  	width: 615.8px;
+  	height: 127.2px;
+}
+.landing-page {
+  	position: absolute;
+  	top: 1871.19px;
+  	left: 125.18px;
+  	letter-spacing: -0.01em;
+  	font-family: 'Brown Sugar';
+  	display: flex;
+  	align-items: center;
+  	width: 615.8px;
+  	height: 127.2px;
+}
+.website-designed-for {
+  	position: absolute;
+  	top: 517.3px;
+  	left: 473.89px;
+  	font-size: 31.36px;
+  	letter-spacing: -0.01em;
+  	text-align: center;
+  	display: flex;
+  	align-items: center;
+  	justify-content: center;
+  	width: 557.5px;
+  	height: 135.9px;
+}
+.line-div {
+  	position: absolute;
+  	top: 1036.61px;
+  	left: 708.08px;
+  	border-top: 10.5px solid #ffe100;
+  	box-sizing: border-box;
+  	width: 89.2px;
+  	height: 10.5px;
+}
+.i-had-the {
+  	margin: 0;
+}
+.i-had-the-container {
+  	position: absolute;
+  	top: 1125.14px;
+  	left: 171.24px;
+  	font-size: 24.39px;
+  	letter-spacing: -0.01em;
+  	line-height: 42.69px;
+  	color: #000;
+  	display: inline-block;
+  	width: 1149.9px;
+  	height: 597.6px;
+}
+.image-50-icon {
+  	position: absolute;
+  	top: 1998.38px;
+  	left: 125.18px;
+  	width: 1242px;
+  	height: 3613px;
+  	object-fit: cover;
+}
+.image-51-icon {
+  	position: absolute;
+  	top: 5874.02px;
+  	left: 131.67px;
+  	width: 1242px;
+  	height: 5123px;
+  	object-fit: cover;
+}
+.product-catalogue-page {
+  	position: absolute;
+  	top: 5746.83px;
+  	left: 131.67px;
+  	letter-spacing: -0.01em;
+  	font-family: 'Brown Sugar';
+  	display: flex;
+  	align-items: center;
+  	width: 711.6px;
+  	height: 127.2px;
+}
+.product-page {
+  	position: absolute;
+  	top: 11147.87px;
+  	left: 131.67px;
+  	letter-spacing: -0.01em;
+  	font-family: 'Brown Sugar';
+  	display: flex;
+  	align-items: center;
+  	width: 711.6px;
+  	height: 127.2px;
+}
+.review-page {
+  	position: absolute;
+  	top: 14590.4px;
+  	left: 131.67px;
+  	letter-spacing: -0.01em;
+  	font-family: 'Brown Sugar';
+  	display: flex;
+  	align-items: center;
+  	width: 711.6px;
+  	height: 127.2px;
+}
+.blog-page {
+  	position: absolute;
+  	top: 17187.16px;
+  	left: 131.67px;
+  	letter-spacing: -0.01em;
+  	font-family: 'Brown Sugar';
+  	white-space: pre-wrap;
+  	display: flex;
+  	align-items: center;
+  	width: 711.6px;
+  	height: 127.2px;
+}
+.image-52-icon {
+  	position: absolute;
+  	top: 11275.06px;
+  	left: 131.67px;
+  	width: 1242px;
+  	height: 3124.8px;
+  	object-fit: cover;
+}
+.image-53-icon {
+  	position: absolute;
+  	top: 14717.58px;
+  	left: 131.67px;
+  	width: 1242px;
+  	height: 2297.7px;
+  	object-fit: cover;
+}
+.image-54-icon {
+  	position: absolute;
+  	top: 17314.34px;
+  	left: 131.67px;
+  	width: 1242px;
+  	height: 3851px;
+  	object-fit: cover;
+}
+.social-link {
+  text-decoration: none;
+  color: #000;
+  font-size: 18.04px;
+  letter-spacing: -0.01em;
+  position: absolute;
+  display: inline-block;
+}
+
+.linkedin {
+	top: 21402.91px;
+    left: 886.77px;
+  color:#142d47
+
+}
+
+.instagram {
+	top: 21402.91px;
+    left: 551.33px;
+  color:#142d47
+}
+
+.email {
+	top: 21402.91px;
+    left: 673.05px;
+  color:#142d47
+
+}
+
+.social-logo {
+  width: 48px; 
+  height: 48px; 
+  opacity: 0; 
+  transition: opacity 0.3s ease; 
+  position: absolute; 
+  top: 50%; 
+  left: 50%; 
+  transform: translate(-50%, -50%); 
+}
+
+.social-text {
+  transition: opacity 0.3s ease;
+  position: relative; 
+  z-index: 1;
+}
+
+.social-link:hover .social-text {
+  opacity: 0; 
+}
+
+.social-link:hover .social-logo {
+  opacity: 1; 
+}
+
+.get-in-contact {
+  	position: absolute;
+  	top: 21317.63px;
+  	left: 635.05px;
+  	font-size: 32.06px;
+  	letter-spacing: -0.01em;
+  	font-family: 'Brown Sugar';
+  	color: #142d47;
+}
+.s-logo-blue-01 {
+  	position: absolute;
+  	top: 25.22px;
+  	left: 22.26px;
+  	width: 50.4px;
+  	height: 72.1px;
+  	object-fit: cover;
+}
+.foursqaures {
+  	width: 100%;
+  	position: relative;
+  	background-color: #ffe100;
+  	height: 21512.5px;
+  	overflow: hidden;
+  	text-align: left;
+  	font-size: 55.75px;
+  	color: #ffe100;
+  	font-family: Avenir;
+}
+
+
+    </style>
+  	
+</head>
+<body>
+  	
+<div id="progressBar"></div>
+
+  	<div class="foursqaures">
+    		<img class="four-icon w3-opacity w3-hover-opacity-off" alt="" src="4fourcover.png">
+    		
+    		<div class="foursqaures-child">
+    		</div>
+    		<div class="foursqaures-item">
+    		</div>
+    		<div class="foursqaures-inner">
+    		</div>
+    		<div class="rectangle-div">
+    		</div>
+    		<div class="foursqaures-child1">
+    		</div>
+    		<div class="foursqaures-child2">
+    		</div>
+    		<div class="home"><a href="index.html"> Home</a></div>
+			<div class="about-me"><a href="about-me.html"> About Me</a></div>
+			<div class="resume"><a href="resume.html" >Resume</a></div>
+    		<div class="four-squares fade-in-text">4  Four Squares</div>
+    		<div class="product-description">Product Description</div>
+    		<div class="landing-page">Landing page</div>
+    		<div class="website-designed-for fade-in-text">Website designed for an clothing e-commerce company</div>
+    		<div class="line-div">
+    		</div>
+    		<div class="i-had-the-container">
+      			<p class="i-had-the">I had the opportunity to work on a project for "4 Four Squares," an established clothing brand based in India. My task was to create a blueprint for their website, focusing on delivering an experience that matched the brand’s identity. It was all about sophistication and subtlety, with a sleek design that captured the essence of modern elegance.</p>
+      			<p class="i-had-the">&nbsp;</p>
+      			<p class="i-had-the">The website’s design leaned into muted tones—soft greys and blacks—giving it a clean, minimalist look. I used transparent buttons to enhance the elegant feel, allowing the design to breathe and maintain a light, airy vibe. The absence of bright colors made it stand out as a timeless piece, with every element working together to draw the user into a serene browsing experience.</p>
+      			<p class="i-had-the">&nbsp;</p>
+      			<p class="i-had-the">One of the key inspirations was the feeling of autumn, which I translated into the overall aesthetic. It’s a website that evokes calm and reflection, much like a crisp autumn day. The subtlety in design choices ensures that the brand’s fashion offerings take center stage, creating a smooth and engaging user journey that is both beautiful and functional.</p>
+    		</div>
+    		<img class="image-50-icon" alt="" src="four1.png">
+    		
+    		<img class="image-51-icon" alt="" src="four2.png">
+    		
+    		<div class="product-catalogue-page">Product catalogue page</div>
+    		<div class="product-page">Product page</div>
+    		<div class="review-page">Review page</div>
+    		<div class="blog-page">Blog  page</div>
+    		<img class="image-52-icon" alt="" src="four3.png">
+    		
+    		<img class="image-53-icon" alt="" src="four4.png">
+    		
+    		<img class="image-54-icon" alt="" src="four5.png">
+
+		<a href="https://www.linkedin.com/in/sriyakshi-sinha-43b45b28b/" target="_blank" class="social-link linkedin">
+			<span class="social-text">LinkedIn</span>
+			<img src="linkedin-black.svg" alt="LinkedIn Logo" class="social-logo">
+		  </a>
+		
+		  <a href="https://www.instagram.com/sriyakshii/?hl=en" target="_blank" class="social-link instagram">
+			<span class="social-text">Instagram</span>
+			<img src="instagram-black.svg" alt="Instagram Logo" class="social-logo">
+		  </a>
+		
+		  <a href="mailto:sriyakshisgmailcom" class="social-link email">
+			<span class="social-text">sriyakshisgmailcom</span>
+			<img src="email-black.svg" alt="Email Icon" class="social-logo">
+		  </a>
+
+		    <div class="get-in-contact">Get In Contact</div>
+    		<img class="s-logo-blue-01" alt="" src="s logo blue-01.png">
+    		
+  	</div>
+  	
+  	
+</body>
+</html>
